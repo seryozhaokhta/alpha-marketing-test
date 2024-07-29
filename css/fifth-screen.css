@@ -1,66 +1,90 @@
-.fifth-screen {
+/* css/fifth-screen.css */
+
+.pagecrm_fifth-screen {
   padding: 50px 100px;
-  background-color: #240046;
+  background-color: var(--bg-color);
   text-align: center;
 }
 
-.fifth-screen h2 {
+.pagecrm_fifth-screen h2 {
   font-size: 36px;
   margin-bottom: 10px;
 }
 
-.fifth-screen p {
+.pagecrm_fifth-screen p {
   font-size: 18px;
   margin-bottom: 40px;
 }
 
-.case-cards {
+.pagecrm_case-cards {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
 
-.case-card {
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+.pagecrm_case-card {
+  background: linear-gradient(
+    135deg,
+    var(--header-gradient) 0%,
+    var(--cta-bg) 100%
+  );
   padding: 20px;
   border-radius: 15px;
   width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #fff;
+  color: var(--text-color);
 }
 
-.case-card .case-logo {
+.pagecrm_case-card .pagecrm_case-logo {
   width: 80px;
   height: 80px;
   margin-bottom: 20px;
 }
 
-.case-card h3 {
+.pagecrm_case-card h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-.case-card p {
+.pagecrm_case-card p {
   font-size: 16px;
   margin: 5px 0;
 }
 
-.case-card .cta-button {
+.pagecrm_case-card .pagecrm_cta-button {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
-  color: #fff;
-  background-color: #ff007f;
+  color: var(--text-color);
+  background-color: var(--cta-bg);
   border: none;
   border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.case-card .cta-button:hover {
-  background-color: #e60073;
+.pagecrm_case-card .pagecrm_cta-button:hover {
+  background-color: var(--cta-hover-bg);
   box-shadow: 0 0 10px rgba(255, 0, 122, 0.5);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .pagecrm_fifth-screen {
+    padding: 30px 10px;
+  }
+
+  .pagecrm_case-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagecrm_case-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
 }

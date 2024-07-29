@@ -1,75 +1,79 @@
 /* css/eighth-screen.css */
 
-.eighth-screen {
+.pagecrm_eighth-screen {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 50px;
-  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  background: linear-gradient(
+    135deg,
+    var(--bg-color) 0%,
+    var(--header-bg) 100%
+  );
   color: var(--text-color);
 }
 
-.crm-partners {
+.pagecrm_crm-partners {
   flex: 1;
   text-align: left;
 }
 
-.crm-partners h2 {
+.pagecrm_crm-partners h2 {
   font-size: 28px;
   margin-bottom: 20px;
 }
 
-.partners-list {
+.pagecrm_partners-list {
   list-style: none;
   padding: 0;
 }
 
-.partners-list li {
+.pagecrm_partners-list li {
   margin-bottom: 15px;
 }
 
-.partners-list li a {
+.pagecrm_partners-list li a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--text-color);
 }
 
-.partners-list li a img {
+.pagecrm_partners-list li a img {
   margin-left: 10px;
   width: 30px;
   height: 30px;
 }
 
-.partners-list li a .arrow {
+.pagecrm_partners-list li a .pagecrm_arrow {
   margin-left: auto;
   font-size: 24px;
   color: var(--text-color);
 }
 
-.contact-form-section {
+.pagecrm_contact-form-section {
   flex: 1;
   text-align: left;
 }
 
-.contact-form-section h2 {
+.pagecrm_contact-form-section h2 {
   font-size: 28px;
   margin-bottom: 10px;
 }
 
-.contact-form-section p {
+.pagecrm_contact-form-section p {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-.contact-form {
+.pagecrm_contact-form {
   display: flex;
   flex-direction: column;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
+.pagecrm_contact-form input,
+.pagecrm_contact-form textarea,
+.pagecrm_contact-form button {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -77,12 +81,37 @@
   border-radius: 5px;
 }
 
-.contact-form button {
+.pagecrm_contact-form button {
   background: var(--cta-bg);
   color: var(--text-color);
   cursor: pointer;
 }
 
-.contact-form button:hover {
+.pagecrm_contact-form button:hover {
   background: var(--cta-hover-bg);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .pagecrm_eighth-screen {
+    flex-direction: column;
+    padding: 30px 10px;
+  }
+
+  .pagecrm_crm-partners,
+  .pagecrm_contact-form-section {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pagecrm_partners-list li a {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pagecrm_partners-list li a .pagecrm_arrow {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }

@@ -1,43 +1,47 @@
-/* css\second-screen.css */
+/* css/second-screen.css */
 
-.second-screen {
-  background: linear-gradient(135deg, #141E30 0%, #243B55 100%);
-  color: #fff;
+.pagecrm_second-screen {
+  background: linear-gradient(
+    135deg,
+    var(--bg-color) 0%,
+    var(--header-bg) 100%
+  );
+  color: var(--text-color);
   padding: 50px 20px;
   text-align: center;
 }
 
-.second-screen h2 {
+.pagecrm_second-screen h2 {
   font-size: 36px;
   margin-bottom: 40px;
 }
 
-.features {
+.pagecrm_features {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
-.feature {
+.pagecrm_feature {
   flex: 1 1 200px;
   margin: 20px;
   text-align: center;
 }
 
-.feature-icon {
+.pagecrm_feature-icon {
   width: 60px;
   height: 60px;
   margin-bottom: 10px;
 }
 
-.crm-cards {
+.pagecrm_crm-cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
-.crm-card {
+.pagecrm_crm-card {
   background: #2c3e50;
   border-radius: 10px;
   overflow: hidden;
@@ -50,28 +54,63 @@
   flex-direction: column;
 }
 
-.crm-image {
+.pagecrm_crm-image {
   width: 100%;
   height: auto;
   max-width: 300px;
   margin-bottom: 20px;
 }
 
-.crm-functions {
+.pagecrm_crm-functions {
   text-align: left;
 }
 
-.crm-functions h3 {
+.pagecrm_crm-functions h3 {
   margin-bottom: 10px;
 }
 
-.crm-functions ul {
+.pagecrm_crm-functions ul {
   list-style: none;
   padding: 0;
 }
 
-.crm-functions li {
-  background: url('images/check.svg') no-repeat left center;
+.pagecrm_crm-functions li {
+  background: url("images/check.svg") no-repeat left center;
   padding-left: 25px;
   margin-bottom: 10px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .pagecrm_second-screen {
+    padding: 30px 10px;
+  }
+
+  .pagecrm_second-screen h2 {
+    font-size: 28px;
+  }
+
+  .pagecrm_features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagecrm_feature {
+    flex: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+
+  .pagecrm_crm-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagecrm_crm-card {
+    flex: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
 }
