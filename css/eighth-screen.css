@@ -1,0 +1,88 @@
+/* css/eighth-screen.css */
+
+.eighth-screen {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: var(--text-color);
+}
+
+.crm-partners {
+  flex: 1;
+  text-align: left;
+}
+
+.crm-partners h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.partners-list {
+  list-style: none;
+  padding: 0;
+}
+
+.partners-list li {
+  margin-bottom: 15px;
+}
+
+.partners-list li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.partners-list li a img {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.partners-list li a .arrow {
+  margin-left: auto;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.contact-form-section {
+  flex: 1;
+  text-align: left;
+}
+
+.contact-form-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-form-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: var(--cta-bg);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: var(--cta-hover-bg);
+}

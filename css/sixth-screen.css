@@ -1,0 +1,110 @@
+/* css/sixth-screen.css */
+
+.sixth-screen {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: var(--text-color);
+}
+
+.form-container, .pricing-container {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.form-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container h2 {
+  color: var(--text-color);
+}
+
+.form-container p {
+  color: var(--text-color);
+}
+
+.form-container input, .form-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-container button {
+  background: var(--cta-bg);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background: var(--cta-hover-bg);
+}
+
+#formSuccessMessage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pricing-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pricing-container h2 {
+  color: var(--text-color);
+}
+
+.pricing-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pricing-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.pricing-card h3 {
+  color: var(--text-color);
+}
+
+.pricing-card p {
+  color: var(--text-color);
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  color: var(--text-color);
+}
+
+.pricing-card li {
+  margin: 10px 0;
+}
+
+.pricing-card button {
+  padding: 10px 20px;
+  background: var(--cta-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pricing-card button:hover {
+  background: var(--cta-hover-bg);
+}

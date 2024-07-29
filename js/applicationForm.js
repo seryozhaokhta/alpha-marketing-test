@@ -1,3 +1,5 @@
+// js/applicationForm.js
+
 export const initApplicationForm = () => {
   const form = document.querySelector(".application-form");
 
