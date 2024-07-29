@@ -1,0 +1,8 @@
+/* css\footer.css */
+
+.pagecrm_footer {
+  padding: 20px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}

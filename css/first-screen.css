@@ -1,0 +1,98 @@
+/* css\first-screen.css */
+
+.pagecrm_main {
+  text-align: center;
+  padding: 50px 100px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: var(--text-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.pagecrm_main::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2),
+    transparent 70%
+  );
+  animation: rotate 10s linear infinite;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pagecrm_main .breadcrumbs {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.pagecrm_main .breadcrumbs a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.pagecrm_main h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.pagecrm_main img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  z-index: 1;
+  position: relative;
+}
+
+.pagecrm_main .cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: var(--text-color);
+  background-color: var(--cta-bg);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+}
+
+.pagecrm_main .cta-button:hover {
+  background-color: var(--cta-hover-bg);
+  box-shadow: 0 0 10px rgba(255, 0, 122, 0.5);
+}
+
+.icon-column {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1;
+}
+
+.icon-column .icon {
+  width: 140px;
+  height: 140px;
+}

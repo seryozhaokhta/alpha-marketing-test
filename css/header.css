@@ -1,0 +1,226 @@
+/* css\header.css */
+
+.pagecrm_header,
+.pagecrm_footer {
+  padding: 10px;
+  background-color: var(--header-bg);
+  color: var(--text-color);
+}
+
+.pagecrm_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: var(--header-gradient);
+}
+
+.pagecrm_header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagecrm_header .logo img {
+  height: 40px;
+}
+
+.pagecrm_header .logo span {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.pagecrm_header .logo small {
+  font-size: 12px;
+  color: #ccc;
+  display: block;
+}
+
+.pagecrm_header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.pagecrm_header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+}
+
+.pagecrm_header nav a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--nav-link-hover);
+  transition: width 0.3s;
+}
+
+.pagecrm_header nav a:hover::after {
+  width: 100%;
+}
+
+.pagecrm_header .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagecrm_header .contact-info .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.pagecrm_header .contact-info .phone-icon {
+  margin-right: 5px;
+}
+
+.pagecrm_header .contact-info .contact-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: #444;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.pagecrm_header .contact-info .contact-button:hover {
+  border-color: var(--nav-link-hover);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.burger-menu.open .burger-line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.open .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.open .burger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.burger-line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--burger-color);
+  transition: all 0.3s;
+}
+
+.search-bar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--search-bar-bg);
+  border: 1px solid var(--search-bar-border);
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  color: var(--text-color);
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.search-bar img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .pagecrm_header {
+    padding: 10px 20px;
+  }
+
+  .pagecrm_header .logo img {
+    height: 30px;
+  }
+
+  .pagecrm_header .logo span {
+    font-size: 20px;
+  }
+
+  .pagecrm_header .logo small {
+    font-size: 10px;
+  }
+
+  .pagecrm_header nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--header-bg);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .pagecrm_header nav.open {
+    display: flex;
+  }
+
+  .pagecrm_header .contact-info {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .burger-menu.open .burger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burger-menu.open .burger-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.open .burger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--burger-color);
+    transition: all 0.3s;
+  }
+
+  .search-bar {
+    display: flex;
+  }
+}

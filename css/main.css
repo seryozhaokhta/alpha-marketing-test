@@ -1,0 +1,15 @@
+/* css\main.css */
+
+@import url("variables.css");
+@import url("header.css");
+@import url("first-screen.css");
+@import url("footer.css");
+
+/* Основные стили */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

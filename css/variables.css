@@ -1,0 +1,19 @@
+/* css\variables.css */
+
+:root {
+  --font-family: "Play", sans-serif;
+  --bg-color: #1a1a1a;
+  --text-color: white;
+  --header-bg: #1a1a1a;
+  --header-gradient: linear-gradient(
+    90deg,
+    rgba(26, 26, 26, 1) 0%,
+    rgba(55, 55, 112, 1) 100%
+  );
+  --nav-link-hover: #fff;
+  --cta-bg: #ff007a;
+  --cta-hover-bg: #ff005a;
+  --burger-color: white;
+  --search-bar-bg: rgba(255, 255, 255, 0.1);
+  --search-bar-border: rgba(255, 255, 255, 0.3);
+}
