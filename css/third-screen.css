@@ -1,0 +1,62 @@
+/* css/third-screen.css */
+
+.third-screen {
+  padding: 50px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.application-form {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  width: 400px;
+  max-width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.application-form h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.application-form p {
+  margin-bottom: 20px;
+}
+
+.application-form input,
+.application-form select,
+.application-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.application-form input::placeholder,
+.application-form select::placeholder,
+.application-form textarea::placeholder {
+  color: #ccc;
+}
+
+.application-form button {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ff007a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.application-form button:hover {
+  background-color: #e6006e;
+}
