@@ -1,0 +1,77 @@
+/* css\second-screen.css */
+
+.second-screen {
+  background: linear-gradient(135deg, #141E30 0%, #243B55 100%);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.second-screen h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.feature {
+  flex: 1 1 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.crm-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.crm-card {
+  background: #2c3e50;
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1 1 400px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.crm-image {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+
+.crm-functions {
+  text-align: left;
+}
+
+.crm-functions h3 {
+  margin-bottom: 10px;
+}
+
+.crm-functions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.crm-functions li {
+  background: url('images/check.svg') no-repeat left center;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}

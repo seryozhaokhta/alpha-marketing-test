@@ -1,4 +1,4 @@
-/* css\header.css */
+/* css/header.css */
 
 .pagecrm_header,
 .pagecrm_footer {
@@ -94,6 +94,23 @@
 .pagecrm_header .contact-info .contact-button:hover {
   border-color: var(--nav-link-hover);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.pagecrm_header .search-bar-desktop {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.pagecrm_header .search-bar-desktop button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.pagecrm_header .search-bar-desktop img {
+  width: 20px;
+  height: 20px;
 }
 
 .burger-menu {
@@ -222,5 +239,9 @@
 
   .search-bar {
     display: flex;
+  }
+
+  .search-bar-desktop {
+    display: hidden;
   }
 }
