@@ -55,8 +55,8 @@
 }
 
 .pagecrm_crm-image {
-  width: 100px; /* Ширина изображения */
-  height: auto;
+  /* width: 100%;
+  height: auto; */
   margin-right: 20px; /* Отступ справа от изображения */
 }
 
