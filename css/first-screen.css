@@ -1,4 +1,4 @@
-/* css\first-screen.css */
+/* css/first-screen.css */
 
 .pagecrm_main {
   text-align: center;
@@ -34,7 +34,7 @@
   }
 }
 
-.pagecrm_main .breadcrumbs {
+.pagecrm_breadcrumbs {
   position: absolute;
   top: 20px;
   left: 100px;
@@ -42,7 +42,7 @@
   z-index: 1;
 }
 
-.pagecrm_main .breadcrumbs a {
+.pagecrm_breadcrumbs a {
   color: var(--text-color);
   text-decoration: none;
   margin-right: 5px;
@@ -56,18 +56,23 @@
 }
 
 .pagecrm_main img {
-  max-width: 100%;
-  height: auto;
+  max-width: 50%;
   margin-bottom: 20px;
   z-index: 1;
   position: relative;
 }
 
-.pagecrm_main .cta-button {
+.pagecrm_cta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagecrm_cta-button {
   display: inline-block;
   margin-top: 20px;
   padding: 15px 30px;
-  font-size: 18px;
+  font-size: 24px;
   color: var(--text-color);
   background-color: var(--cta-bg);
   border: none;
@@ -77,12 +82,12 @@
   position: relative;
 }
 
-.pagecrm_main .cta-button:hover {
+.pagecrm_cta-button:hover {
   background-color: var(--cta-hover-bg);
   box-shadow: 0 0 10px rgba(255, 0, 122, 0.5);
 }
 
-.icon-column {
+.pagecrm_icon-column {
   position: absolute;
   top: 100px;
   right: 20px;
@@ -92,7 +97,7 @@
   z-index: 1;
 }
 
-.icon-column .icon {
+.pagecrm_icon {
   width: 140px;
   height: 140px;
 }

@@ -48,21 +48,20 @@
   flex: 1 1 400px;
   margin: 20px;
   padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  display: flex; /* Изменено на flex */
+  align-items: center; /* Центрирование по вертикали */
+  justify-content: start; /* Выровнять по левому краю */
+  text-align: left; /* Текст по левому краю */
 }
 
 .pagecrm_crm-image {
-  width: 100%;
+  width: 100px; /* Ширина изображения */
   height: auto;
-  max-width: 300px;
-  margin-bottom: 20px;
+  margin-right: 20px; /* Отступ справа от изображения */
 }
 
 .pagecrm_crm-functions {
-  text-align: left;
+  flex: 1;
 }
 
 .pagecrm_crm-functions h3 {
@@ -91,15 +90,16 @@
   }
 
   .pagecrm_features {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
   .pagecrm_feature {
     flex: none;
     width: 100%;
-    max-width: 300px;
-    margin: 10px 0;
+    max-width: none;
+    margin: 10px;
   }
 
   .pagecrm_crm-cards {
@@ -112,5 +112,13 @@
     width: 100%;
     max-width: 300px;
     margin: 10px 0;
+    flex-direction: column; /* Вертикальное расположение на мобильных устройствах */
+    text-align: center; /* Текст по центру на мобильных устройствах */
+  }
+
+  .pagecrm_crm-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%; /* Ширина изображения на мобильных устройствах */
   }
 }
