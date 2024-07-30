@@ -11,49 +11,56 @@
     />
   </head>
   <body>
-    <!-- Header -->
-    <header class="pagecrm_header">
-      <div class="logo">
-        <img src="images/logo.svg" alt="Alpha marketing" />
-        <div>
-          <span>Alpha marketing</span>
-          <small>Актуальный маркетинг и продажи</small>
-        </div>
-      </div>
-      <div class="burger-menu" id="burger-menu">
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-      </div>
-      <nav id="nav">
-        <a href="#">Услуги</a>
-        <a href="#">Кейсы</a>
-        <a href="#">Ещё</a>
-      </nav>
-      <div class="contact-info">
-        <span>
-          <img src="images/phone.svg" alt="Phone" class="icon phone-icon" />
-          8 812 409-52-22
-        </span>
-        <a href="#" class="contact-button">
-          Задать вопрос
-          <img src="images/arrow.svg" alt="Arrow" class="icon arrow-icon" />
-        </a>
-      </div>
-      <div class="search-bar-desktop">
-        <button type="button">
-          <img src="images/search.svg" alt="Search" />
-        </button>
-      </div>
-    </header>
-
-    <!-- Search Bar for Mobile -->
-    <div class="search-bar" id="search-bar">
-      <input type="text" placeholder="Поиск..." />
+<!-- Header -->
+<header class="pagecrm_header">
+  <div class="logo">
+    <img src="images/logo.svg" alt="Alpha marketing" />
+    <div>
+      <span>Alpha marketing</span>
+      <small>Актуальный маркетинг и продажи</small>
+    </div>
+  </div>
+  <span class="pagecrm_contact-info-mobile">
+    <img src="images/phone.svg" alt="Phone" class="icon phone-icon" />
+    8 812 409-52-22
+  </span>
+  <nav id="nav">
+    <a href="#" class="pagecrm_nav-link">Услуги</a>
+    <a href="#" class="pagecrm_nav-link">Кейсы</a>
+    <a href="#" class="pagecrm_nav-link">Ещё</a>
+    <div class="search-bar-desktop">
       <button type="button">
         <img src="images/search.svg" alt="Search" />
       </button>
     </div>
+  </nav>
+  <div class="contact-info">
+    <span class="pagecrm_contact-info">
+      <img src="images/phone.svg" alt="Phone" class="icon phone-icon" />
+      8 812 409-52-22
+    </span>
+    <a href="#" class="contact-button pagecrm_contact-button">
+      Задать вопрос
+      <img src="images/arrow.svg" alt="Arrow" class="icon arrow-icon" />
+    </a>
+  </div>
+</header>
+
+<!-- Search Bar and Burger Menu for Mobile -->
+<div class="pagecrm_mobile-controls">
+  <div class="pagecrm_burger-menu" id="burger-menu">
+    <div class="pagecrm_burger-line"></div>
+    <div class="pagecrm_burger-line"></div>
+    <div class="pagecrm_burger-line"></div>
+  </div>
+  <div class="pagecrm_search-bar" id="search-bar">
+    <input type="text" placeholder="Поиск..." />
+    <button type="button">
+      <img src="images/search.svg" alt="Search" />
+    </button>
+  </div>
+</div>
+
 
     <!-- Main Content -->
     <main class="pagecrm_main">
