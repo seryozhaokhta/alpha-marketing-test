@@ -16,10 +16,18 @@
   text-align: center;
 }
 
-.pagecrm_crm-benefits {
+.pagecrm_content {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
+  align-items: center;
+}
+
+.pagecrm_crm-benefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin-right: 20px;
 }
 
 .pagecrm_crm-benefits .pagecrm_benefit {
@@ -29,8 +37,7 @@
   background: rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 10px;
-  flex: 1;
-  margin: 0 10px;
+  margin-bottom: 20px;
 }
 
 .pagecrm_crm-benefits .pagecrm_benefit-icon {
@@ -45,7 +52,8 @@
 
 .pagecrm_crm-analytics {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end; /* перемещает телефон вправо */
+  flex: 1;
 }
 
 .pagecrm_crm-analytics .pagecrm_analytics-image {
@@ -63,9 +71,12 @@
     font-size: 28px;
   }
 
-  .pagecrm_crm-benefits {
+  .pagecrm_content {
     flex-direction: column;
-    align-items: center;
+  }
+
+  .pagecrm_crm-benefits {
+    margin-right: 0;
   }
 
   .pagecrm_crm-benefits .pagecrm_benefit {
@@ -76,7 +87,6 @@
   }
 
   .pagecrm_crm-analytics .pagecrm_analytics-image {
-    max-width: 100%;
-    height: auto;
+    display: none; /* скрывает картинку на мобильной версии */
   }
 }

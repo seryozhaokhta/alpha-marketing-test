@@ -30,8 +30,8 @@
 }
 
 .pagecrm_feature-icon {
-  width: 60px;
-  height: 60px;
+  width: 190px;
+  height: 190px;
   margin-bottom: 10px;
 }
 
@@ -43,15 +43,15 @@
 
 .pagecrm_crm-card {
   background: #2c3e50;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
   flex: 1 1 400px;
   margin: 20px;
-  padding: 20px;
-  display: flex; /* Изменено на flex */
-  align-items: center; /* Центрирование по вертикали */
-  justify-content: start; /* Выровнять по левому краю */
-  text-align: left; /* Текст по левому краю */
+  /* padding: 20px; */
+  display: flex;
+  align-items: top;
+  justify-content: start;
+  text-align: left;
 }
 
 .pagecrm_crm-image {
@@ -88,7 +88,11 @@
   .pagecrm_second-screen h2 {
     font-size: 28px;
   }
-
+  .pagecrm_feature-icon {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
   .pagecrm_features {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -112,13 +116,13 @@
     width: 100%;
     max-width: 300px;
     margin: 10px 0;
-    flex-direction: column; /* Вертикальное расположение на мобильных устройствах */
-    text-align: center; /* Текст по центру на мобильных устройствах */
+    flex-direction: column;
+    text-align: center;
   }
 
   .pagecrm_crm-image {
     margin-right: 0;
     margin-bottom: 20px;
-    width: 100%; /* Ширина изображения на мобильных устройствах */
+    width: 100%;
   }
 }
