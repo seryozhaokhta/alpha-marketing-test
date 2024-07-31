@@ -47,7 +47,6 @@
   overflow: hidden;
   flex: 1 1 400px;
   margin: 20px;
-  /* padding: 20px; */
   display: flex;
   align-items: top;
   justify-content: start;
@@ -55,9 +54,9 @@
 }
 
 .pagecrm_crm-image {
-  /* width: 100%;
-  height: auto; */
-  margin-right: 20px; /* Отступ справа от изображения */
+  width: 50%;
+  height: auto;
+  margin-right: 20px;
 }
 
 .pagecrm_crm-functions {
@@ -74,9 +73,15 @@
 }
 
 .pagecrm_crm-functions li {
-  background: url("images/check.svg") no-repeat left center;
-  padding-left: 25px;
+  display: flex;
+  align-items: center;
   margin-bottom: 10px;
+}
+
+.pagecrm_crm-functions li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
 /* Адаптивные стили */
@@ -88,11 +93,13 @@
   .pagecrm_second-screen h2 {
     font-size: 28px;
   }
+  
   .pagecrm_feature-icon {
     width: 90px;
     height: 90px;
     margin-bottom: 10px;
   }
+
   .pagecrm_features {
     display: grid;
     grid-template-columns: 1fr 1fr;

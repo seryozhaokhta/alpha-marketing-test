@@ -27,16 +27,16 @@
   flex-direction: column;
   justify-content: space-between;
   flex: 1;
+  background: rgba(0, 0, 0, 0.2);
   margin-right: 20px;
+  border-radius: 20px;
 }
 
 .pagecrm_crm-benefits .pagecrm_benefit {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(0, 0, 0, 0.2);
   padding: 20px;
-  border-radius: 10px;
   margin-bottom: 20px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .pagecrm_crm-analytics .pagecrm_analytics-image {
-  max-width: 50%;
+  max-width: 70%;
   height: auto;
 }
 
@@ -72,7 +72,7 @@
   }
 
   .pagecrm_content {
-    flex-direction: column;
+    flex-direction: column; 
   }
 
   .pagecrm_crm-benefits {

@@ -1,5 +1,4 @@
 /* css/sixth-screen.css */
-
 .pagecrm_sixth-screen {
   display: flex;
   justify-content: space-between;
@@ -12,62 +11,18 @@
   color: var(--text-color);
 }
 
-.pagecrm_form-container,
+.pagecrm_pricing-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
 .pagecrm_pricing-container {
   flex: 1;
   margin: 0 20px;
-}
-
-.pagecrm_form-container {
   background: rgba(0, 0, 0, 0.5);
   padding: 20px;
   border-radius: 10px;
-}
-
-.pagecrm_form-container h2 {
-  color: var(--text-color);
-}
-
-.pagecrm_form-container p {
-  color: var(--text-color);
-}
-
-.pagecrm_form-container input,
-.pagecrm_form-container button {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
-}
-
-.pagecrm_form-container button {
-  background: var(--cta-bg);
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-.pagecrm_form-container button:hover {
-  background: var(--cta-hover-bg);
-}
-
-#formSuccessMessage {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.pagecrm_pricing-container {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.pagecrm_pricing-container h2 {
-  color: var(--text-color);
 }
 
 .pagecrm_pricing-options {
@@ -82,6 +37,12 @@
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.pagecrm_pricing-card:hover {
+  transform: scale(1.05);
 }
 
 .pagecrm_pricing-card h3 {
@@ -115,6 +76,80 @@
   background: var(--cta-hover-bg);
 }
 
+/* Modal Window Styles */
+.pagecrm_modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 60px;
+}
+
+.pagecrm_modal-content {
+  background-color: var(--bg-color);
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagecrm_close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.pagecrm_close:hover,
+.pagecrm_close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#pagecrm_formSuccessMessage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pagecrm_form-container h2,
+.pagecrm_form-container p,
+.pagecrm_form-container input,
+.pagecrm_form-container button {
+  color: var(--text-color);
+}
+
+.pagecrm_form-container input,
+.pagecrm_form-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.pagecrm_form-container button {
+  background: var(--cta-bg);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.pagecrm_form-container button:hover {
+  background: var(--cta-hover-bg);
+}
+
 /* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_sixth-screen {
@@ -122,12 +157,15 @@
     padding: 30px 10px;
   }
 
-  .pagecrm_form-container,
   .pagecrm_pricing-container {
     margin: 10px 0;
   }
 
   .pagecrm_pricing-options {
     flex-direction: column;
+  }
+
+  .pagecrm_modal-content {
+    width: 90%;
   }
 }
