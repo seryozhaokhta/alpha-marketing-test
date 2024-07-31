@@ -27,6 +27,8 @@
   flex: 1 1 200px;
   margin: 20px;
   text-align: center;
+  box-shadow: var(--box-shadow);
+  filter: var(--glow-effect);
 }
 
 .pagecrm_feature-icon {
@@ -51,6 +53,8 @@
   align-items: top;
   justify-content: start;
   text-align: left;
+  box-shadow: var(--box-shadow);
+  filter: var(--glow-effect);
 }
 
 .pagecrm_crm-image {

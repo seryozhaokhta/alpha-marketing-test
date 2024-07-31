@@ -93,7 +93,7 @@
 .pagecrm_contact-form textarea,
 .pagecrm_contact-form button {
   width: 100%;
-  padding: 10px;
+  padding: 10px 0;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;

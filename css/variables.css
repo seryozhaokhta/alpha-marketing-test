@@ -2,18 +2,19 @@
 
 :root {
   --font-family: "Play", sans-serif;
-  --bg-color: #818181;
+  --bg-color: hsl(270, 100%, 34%);
   --text-color: white;
-  --header-bg: #1a1a1a;
+  --header-bg: hsla(265, 100%, 10%, 0.3); /* Фон с прозрачностью */
   --header-gradient: linear-gradient(
-    90deg,
-    rgba(26, 26, 26, 1) 0%,
-    rgba(55, 55, 112, 1) 100%
+    135deg,
+    hsl(240, 80%, 50%) 0%,
+    /* #383fec в hsl */ hsl(180, 100%, 50%) 100% /* #23ffff в hsl */
   );
-  --nav-link-hover: #fff;
-  --cta-bg: #ff007a;
-  --cta-hover-bg: #ff005a;
+  --nav-link-hover: hsl(0, 0%, 100%); /* Белый */
+  --cta-bg: hsl(270, 100%, 15%); /* #1E0044 в hsl */
+  --cta-hover-bg: hsl(270, 100%, 34%); /* #ff005a в hsl */
   --burger-color: white;
-  --search-bar-bg: rgba(255, 255, 255, 0.1);
-  --search-bar-border: rgba(255, 255, 255, 0.3);
+  --search-bar-bg: hsla(0, 0%, 100%, 0.1);
+  --search-bar-border: hsla(0, 0%, 100%, 0.3);
+  --box-shadow: 0 0 15px #383fec, 0 0 30px #23ffff, 0 0 45px #383fec;
 }
