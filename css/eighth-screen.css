@@ -2,15 +2,18 @@
 
 .pagecrm_eighth-screen {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   padding: 50px;
-  background: linear-gradient(
-    135deg,
-    var(--bg-color) 0%,
-    var(--header-bg) 100%
-  );
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--header-bg) 100%);
   color: var(--text-color);
+}
+
+.pagecrm_crm-partners-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .pagecrm_crm-partners {
@@ -29,7 +32,9 @@
 }
 
 .pagecrm_partners-list li {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 15px;
 }
 
 .pagecrm_partners-list li a {
@@ -39,34 +44,47 @@
   color: var(--text-color);
 }
 
-.pagecrm_partners-list li a img {
-  margin-left: 10px;
-  width: 30px;
-  height: 30px;
-}
-
 .pagecrm_partners-list li a .pagecrm_arrow {
   margin-left: auto;
-  font-size: 24px;
-  color: var(--text-color);
+  width: 24px;
+  height: 24px;
+  background: url('images/eighth-screen/arrow.svg') no-repeat center;
+  background-size: contain;
+}
+
+.pagecrm_crm-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagecrm_crm-images img {
+  width: 270px;
+  height: auto;
 }
 
 .pagecrm_contact-form-section {
-  flex: 1;
-  text-align: left;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.pagecrm_contact-form-section h2 {
-  font-size: 28px;
+.pagecrm_contact-info {
+  flex: 1;
+  max-width: 300px;
+}
+
+.pagecrm_contact-form-section h2,
+.pagecrm_contact-info p {
   margin-bottom: 10px;
 }
 
-.pagecrm_contact-form-section p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
 .pagecrm_contact-form {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
@@ -94,24 +112,32 @@
 /* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_eighth-screen {
-    flex-direction: column;
     padding: 30px 10px;
   }
 
-  .pagecrm_crm-partners,
-  .pagecrm_contact-form-section {
-    flex: none;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .pagecrm_partners-list li a {
+  .pagecrm_crm-partners-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
-  .pagecrm_partners-list li a .pagecrm_arrow {
-    margin-left: 0;
-    margin-top: 10px;
+  .pagecrm_crm-images {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .pagecrm_contact-form-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagecrm_contact-info,
+  .pagecrm_contact-form {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .pagecrm_contact-info p {
+    text-align: center;
   }
 }
