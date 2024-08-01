@@ -28,44 +28,6 @@
   gap: 50px;
 }
 
-.pagecrm_application-form {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  box-sizing: border-box;
-}
-
-.pagecrm_application-form h3 {
-  color: var(--text-color);
-  margin-bottom: 10px;
-}
-
-.pagecrm_application-form p {
-  color: var(--text-color);
-  margin-bottom: 20px;
-}
-
-.pagecrm_application-form input,
-.pagecrm_application-form select,
-.pagecrm_application-form button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: none;
-  border-radius: 5px;
-}
-
-.pagecrm_application-form button {
-  background: var(--cta-bg);
-  color: var(--text-color);
-  cursor: pointer;
-}
-
-.pagecrm_application-form button:hover {
-  background: var(--cta-hover-bg);
-}
-
 .pagecrm_illustration {
   display: flex;
   justify-content: center;
