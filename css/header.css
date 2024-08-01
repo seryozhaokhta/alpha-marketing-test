@@ -39,7 +39,6 @@
 .pagecrm_nav-link {
   text-transform: uppercase;
   font-size: 20px;
-  
 }
 
 .pagecrm_contact-info,
@@ -110,13 +109,16 @@
   text-decoration: none;
   background-color: var(--cta-bg);
   padding: 10px 20px;
-  border-radius: 5px;
-  border: 1px solid transparent;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-image: linear-gradient(var(--cta-bg), var(--cta-bg)),
+    var(--button-border-gradient);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .pagecrm_header .contact-info .contact-button:hover {
-  border-color: var(--nav-link-hover);
   box-shadow: var(--box-shadow);
 }
 

@@ -16,22 +16,14 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.2),
-    transparent 70%
-  );
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent 70%);
   animation: rotate 10s linear infinite;
   z-index: 0;
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 .pagecrm_breadcrumbs {
@@ -75,29 +67,34 @@
   font-size: 24px;
   color: var(--text-color);
   background-color: var(--cta-bg);
-  border: none;
-  border-radius: 5px;
+  border: 2px solid transparent;
+  border-radius: 20px;
   text-decoration: none;
   z-index: 1;
   position: relative;
+  background-clip: padding-box;
+  transition: background-color 0.3s, transform 0.3s;
+  overflow: hidden;
+}
+
+.pagecrm_cta-button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: inherit;
+  padding: 2px;
+  background: var(--button-border-gradient);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 
 .pagecrm_cta-button:hover {
   background-color: var(--cta-hover-bg);
   box-shadow: var(--box-shadow);
-}
-
-.pagecrm_icon-column {
-  position: absolute;
-  top: 100px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  z-index: 1;
-}
-
-.pagecrm_icon {
-  width: 140px;
-  height: 140px;
 }
