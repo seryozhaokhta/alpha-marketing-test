@@ -1,61 +1,108 @@
 /* css/seventh-screen.css */
 
-.pagecrm_seventh-screen {
+.pagecrm_form2-screen {
   padding: 50px;
-  background: linear-gradient(
-    135deg,
-    var(--bg-color) 0%,
-    var(--header-bg) 100%
-  );
+  background: linear-gradient(135deg, var(--bg-color) 0%, var(--header-bg) 100%);
   color: var(--text-color);
   text-align: center;
 }
 
-.pagecrm_seventh-screen h2 {
+.pagecrm_form2-screen h2 {
   font-size: 36px;
   margin-bottom: 10px;
 }
 
-.pagecrm_seventh-screen p {
+.pagecrm_form2-screen p {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-.pagecrm_form-container {
+.pagecrm_form2-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
 }
 
-.pagecrm_illustration {
+.pagecrm_form2-application-form {
+  background: rgba(72, 5, 114, 0.49); /* rgba цвет с альфа-каналом */
+  border-radius: 32px;
+  padding: 20px;
+  width: 912px; /* ширина формы */
+  height: 565px; /* высота формы */
+  box-shadow: var(--box-shadow);
+  text-align: left;
+}
+
+.pagecrm_form2-application-form h3 {
+  padding: 20px;
+  background: linear-gradient(135deg, hsla(274, 100%, 50%, 1), hsla(274, 100%, 60%, 1));
+  border-radius: 20px;
+  font-size: 18px; /* уменьшенный кегль заголовка */
+  font-weight: normal;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.pagecrm_form2-application-form p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.pagecrm_form2-application-form input,
+.pagecrm_form2-application-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: var(--search-bar-bg);
+  color: var(--text-color);
+}
+
+.pagecrm_form2-application-form button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background: var(--cta-bg);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pagecrm_form2-application-form button:hover {
+  background-color: var(--cta-hover-bg);
+}
+
+.pagecrm_form2-illustration {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.pagecrm_illustration img {
+.pagecrm_form2-illustration img {
   max-width: 100%;
   height: auto;
 }
 
 /* Адаптивные стили */
 @media (max-width: 768px) {
-  .pagecrm_seventh-screen {
+  .pagecrm_form2-screen {
     padding: 30px 10px;
   }
 
-  .pagecrm_form-container {
+  .pagecrm_form2-container {
     flex-direction: column;
     gap: 20px;
   }
 
-  .pagecrm_application-form {
-    width: 100%;
-    max-width: 300px;
+  .pagecrm_form2-application-form {
+    width: 344px; /* ширина формы на мобильных устройствах */
+    height: 438px; /* высота формы на мобильных устройствах */
   }
 
-  .pagecrm_illustration img {
+  .pagecrm_form2-illustration img {
     max-width: 100%;
   }
 }

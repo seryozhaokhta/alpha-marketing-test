@@ -22,6 +22,9 @@
   text-align: center;
   color: var(--text-color);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .pagecrm_application-form:hover {
@@ -62,6 +65,10 @@
 .pagecrm_application-form select::placeholder,
 .pagecrm_application-form textarea::placeholder {
   color: #aaa;
+}
+
+.pagecrm_application-form textarea {
+  flex: 1;
 }
 
 .pagecrm_application-form button {
