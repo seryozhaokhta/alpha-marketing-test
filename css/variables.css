@@ -4,12 +4,7 @@
   --font-family: "Play", sans-serif;
   --bg-color: hsl(270, 100%, 34%);
   --text-color: white;
-  --header-bg: hsla(265, 100%, 10%, 0.5);
-  --header-gradient: linear-gradient(
-    135deg,
-    hsl(240, 80%, 50%) 0%,
-    hsl(180, 100%, 50%) 100%
-  );
+  --header-bg: hsla(265, 97%, 13%, 0.3);
   --nav-link-hover: hsl(0, 0%, 100%);
   --cta-bg: hsl(270, 100%, 15%);
   --cta-hover-bg: hsl(270, 100%, 34%);

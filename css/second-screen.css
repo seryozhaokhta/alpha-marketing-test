@@ -1,11 +1,7 @@
 /* css/second-screen.css */
 
 .pagecrm_second-screen {
-  background: linear-gradient(
-    135deg,
-    var(--bg-color) 0%,
-    var(--header-bg) 100%
-  );
+  background: var(--bg-color);
   color: var(--text-color);
   padding: 50px 20px;
   text-align: center;

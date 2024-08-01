@@ -2,11 +2,7 @@
 
 .pagecrm_sixth-screen {
   padding: 50px 20px;
-  background: linear-gradient(
-    135deg,
-    var(--bg-color) 0%,
-    var(--header-bg) 100%
-  );
+  background: var(--bg-color);
   color: var(--text-color);
   text-align: center;
 }
@@ -45,7 +41,11 @@
 
 .pagecrm_pricing-card h3 {
   padding: 20px;
-  background: linear-gradient(135deg, hsla(274, 100%, 50%, 1), hsla(274, 100%, 50%, 0.15));
+  background: linear-gradient(
+    135deg,
+    hsla(274, 100%, 50%, 1),
+    hsla(274, 100%, 50%, 0.15)
+  );
   border-radius: 20px;
   display: flex;
   justify-content: space-between;

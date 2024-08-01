@@ -2,11 +2,7 @@
 
 .pagecrm_third-screen {
   padding: 50px;
-  background: linear-gradient(
-    135deg,
-    var(--bg-color) 0%,
-    var(--header-bg) 100%
-  );
+  background: var(--bg-color);
   display: flex;
   justify-content: center;
   align-items: center;

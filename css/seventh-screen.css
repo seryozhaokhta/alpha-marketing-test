@@ -2,7 +2,7 @@
 
 .pagecrm_form2-screen {
   padding: 50px;
-  background: linear-gradient(135deg, var(--bg-color) 0%, var(--header-bg) 100%);
+  background: var(--bg-color);
   color: var(--text-color);
   text-align: center;
 }
@@ -25,20 +25,54 @@
 }
 
 .pagecrm_form2-application-form {
-  background: rgba(72, 5, 114, 0.49); /* rgba цвет с альфа-каналом */
-  border-radius: 32px;
+  position: relative;
+  background: hsla(272, 90%, 23%, 0.49);
+  box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.5);
   padding: 20px;
-  width: 912px; /* ширина формы */
-  height: 565px; /* высота формы */
-  box-shadow: var(--box-shadow);
+  border-radius: 32px;
+  width: 912px;
+  height: 565px;
   text-align: left;
+  color: var(--text-color);
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+
+.pagecrm_form2-application-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(310, 100%, 80%) 50%,
+    hsl(207, 80%, 70%) 100%
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.pagecrm_form2-application-form:hover {
+  transform: scale(1.02);
 }
 
 .pagecrm_form2-application-form h3 {
   padding: 20px;
-  background: linear-gradient(135deg, hsla(274, 100%, 50%, 1), hsla(274, 100%, 60%, 1));
+  background: linear-gradient(
+    135deg,
+    hsla(274, 100%, 50%, 1),
+    hsla(274, 100%, 60%, 1)
+  );
   border-radius: 20px;
-  font-size: 18px; /* уменьшенный кегль заголовка */
+  font-size: 18px;
   font-weight: normal;
   color: var(--text-color);
   margin-bottom: 15px;
@@ -98,8 +132,8 @@
   }
 
   .pagecrm_form2-application-form {
-    width: 344px; /* ширина формы на мобильных устройствах */
-    height: 438px; /* высота формы на мобильных устройствах */
+    width: 344px;
+    height: 438px;
   }
 
   .pagecrm_form2-illustration img {

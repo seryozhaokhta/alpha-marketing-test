@@ -2,11 +2,7 @@
 
 .pagecrm_fourth-screen {
   padding: 50px 100px;
-  background: linear-gradient(
-    135deg,
-    var(--bg-color) 0%,
-    var(--header-bg) 100%
-  );
+  background: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -72,7 +68,7 @@
   }
 
   .pagecrm_content {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .pagecrm_crm-benefits {
