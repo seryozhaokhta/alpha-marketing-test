@@ -4,17 +4,19 @@
   --font-family: "Play", sans-serif;
   --bg-color: hsl(270, 100%, 34%);
   --text-color: white;
-  --header-bg: hsla(265, 100%, 10%, 0.3); /* Фон с прозрачностью */
+  --header-bg: hsla(265, 100%, 10%, 0.5);
   --header-gradient: linear-gradient(
     135deg,
     hsl(240, 80%, 50%) 0%,
-    /* #383fec в hsl */ hsl(180, 100%, 50%) 100% /* #23ffff в hsl */
+    hsl(180, 100%, 50%) 100%
   );
-  --nav-link-hover: hsl(0, 0%, 100%); /* Белый */
-  --cta-bg: hsl(270, 100%, 15%); /* #1E0044 в hsl */
-  --cta-hover-bg: hsl(270, 100%, 34%); /* #ff005a в hsl */
+  --nav-link-hover: hsl(0, 0%, 100%);
+  --cta-bg: hsl(270, 100%, 15%);
+  --cta-hover-bg: hsl(270, 100%, 34%);
   --burger-color: white;
   --search-bar-bg: hsla(0, 0%, 100%, 0.1);
   --search-bar-border: hsla(0, 0%, 100%, 0.3);
   --box-shadow: 0 0 15px #383fec, 0 0 30px #23ffff, 0 0 45px #383fec;
+  --glow-color: hsl(281, 100%, 77%); /* #D795FF */
+  --glow-gradient: hsl(270, 40%, 60%); /* #815C98 */
 }

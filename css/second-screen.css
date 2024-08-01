@@ -27,14 +27,14 @@
   flex: 1 1 200px;
   margin: 20px;
   text-align: center;
-  box-shadow: var(--box-shadow);
-  filter: var(--glow-effect);
 }
 
 .pagecrm_feature-icon {
   width: 190px;
   height: 190px;
   margin-bottom: 10px;
+  filter: drop-shadow(0 0 10px var(--glow-color))
+    drop-shadow(0 0 20px var(--glow-color));
 }
 
 .pagecrm_crm-cards {
@@ -47,14 +47,16 @@
   background: #2c3e50;
   border-radius: 20px;
   overflow: hidden;
-  flex: 1 1 400px;
+  width: 690px;
+  height: 320px;
   margin: 20px;
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: start;
   text-align: left;
   box-shadow: var(--box-shadow);
-  filter: var(--glow-effect);
+  filter: drop-shadow(0 0 10px var(--glow-color))
+    drop-shadow(0 0 20px var(--glow-color));
 }
 
 .pagecrm_crm-image {
@@ -77,15 +79,8 @@
 }
 
 .pagecrm_crm-functions li {
-  display: flex;
-  align-items: center;
+  padding-left: 25px;
   margin-bottom: 10px;
-}
-
-.pagecrm_crm-functions li img {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
 }
 
 /* Адаптивные стили */
@@ -96,12 +91,6 @@
 
   .pagecrm_second-screen h2 {
     font-size: 28px;
-  }
-  
-  .pagecrm_feature-icon {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 10px;
   }
 
   .pagecrm_features {
@@ -117,6 +106,11 @@
     margin: 10px;
   }
 
+  .pagecrm_feature-icon {
+    width: 100px;
+    height: 100px;
+  }
+
   .pagecrm_crm-cards {
     flex-direction: column;
     align-items: center;
@@ -125,15 +119,24 @@
   .pagecrm_crm-card {
     flex: none;
     width: 100%;
-    max-width: 300px;
+    max-width: 100%;
     margin: 10px 0;
     flex-direction: column;
     text-align: center;
+    height: auto; /* Adjust height for mobile */
   }
 
   .pagecrm_crm-image {
     margin-right: 0;
     margin-bottom: 20px;
     width: 100%;
+  }
+
+  .pagecrm_crm-functions {
+    padding: 0 10px;
+  }
+
+  .pagecrm_crm-functions ul {
+    padding-left: 20px;
   }
 }
