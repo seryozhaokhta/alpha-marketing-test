@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -527,12 +531,20 @@
       </div>
     </footer>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
-      async
-      defer
-    ></script>
-
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const map = L.map("map").setView([59.9311, 30.3609], 14);
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(map);
+        L.marker([59.9311, 30.3609])
+          .addTo(map)
+          .bindPopup("Alpha marketing")
+          .openPopup();
+      });
+    </script>
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
