@@ -7,7 +7,7 @@
 }
 
 .pagecrm_fourth-screen h2 {
-  font-size: 36px;
+  font-size: 45px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -22,17 +22,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 1;
+  flex: none; /* Убираем автоматическое изменение размера */
+  width: 1167px;
+  height: 504px;
   background: rgba(0, 0, 0, 0.2);
-  margin-right: 20px;
   border-radius: 20px;
+  padding: 20px;
 }
 
 .pagecrm_crm-benefits .pagecrm_benefit {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 20px;
   margin-bottom: 20px;
 }
 
@@ -42,7 +43,7 @@
 }
 
 .pagecrm_crm-benefits p {
-  font-size: 18px;
+  font-size: 36px;
   color: var(--text-color);
 }
 
@@ -69,17 +70,23 @@
 
   .pagecrm_content {
     flex-direction: column;
+    align-items: center;
   }
 
   .pagecrm_crm-benefits {
+    width: 340px;
+    height: 266px;
     margin-right: 0;
   }
 
   .pagecrm_crm-benefits .pagecrm_benefit {
     flex: none;
     width: 100%;
-    max-width: 300px;
     margin: 10px 0;
+  }
+
+  .pagecrm_crm-benefits p {
+    font-size: 14px;
   }
 
   .pagecrm_crm-analytics .pagecrm_analytics-image {

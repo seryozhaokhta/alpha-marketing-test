@@ -21,8 +21,8 @@
   text-align: left;
 }
 
-.pagecrm_crm-partners h2 {
-  font-size: 28px;
+.pagecrm_eighth-screen h2 {
+  font-size: 45px;
   margin-bottom: 20px;
 }
 
@@ -42,14 +42,13 @@
   align-items: center;
   text-decoration: none;
   color: var(--text-color);
+  font-size: 36px; /* Размер шрифта для текста ссылок */
 }
 
 .pagecrm_partners-list li a .pagecrm_arrow {
   margin-left: auto;
   width: 24px;
   height: 24px;
-  background: url("images/eighth-screen/arrow.svg") no-repeat center;
-  background-size: contain;
 }
 
 .pagecrm_crm-images {
@@ -138,6 +137,11 @@
 
 /* Адаптивные стили */
 @media (max-width: 768px) {
+  .pagecrm_eighth-screen h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
   .pagecrm_eighth-screen {
     padding: 30px 10px;
   }
@@ -154,9 +158,12 @@
 
   .pagecrm_crm-images img {
     width: 100%;
-    max-width: 340px;
     height: auto;
     margin-bottom: 20px;
+  }
+
+  .pagecrm_partners-list li a {
+    font-size: 14px;
   }
 
   .pagecrm_form3-section {

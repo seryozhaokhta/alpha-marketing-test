@@ -16,11 +16,13 @@
 .pagecrm_form2-screen h2 {
   font-size: 36px;
   font-weight: normal;
-  margin-bottom: 10px;
+  max-width: 876px;
+  margin: 0 auto 75px;
   background: var(--heading-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  align-items: center;
 }
 
 .pagecrm_form2-screen p {
@@ -79,7 +81,7 @@
   border-radius: 32px;
   font-size: 42px;
   font-weight: bold;
-  color: var(--text-color);
+  color: var (--text-color);
   margin-bottom: 15px;
 }
 
@@ -143,6 +145,8 @@
 .pagecrm_form2-illustration img {
   max-width: 100%;
   height: auto;
+  filter: var(--globe-glow); /* Apply the new globe glow variable */
+  box-shadow: var(--card-glow); /* Apply the box shadow for the glow effect */
 }
 
 /* Адаптивные стили */
