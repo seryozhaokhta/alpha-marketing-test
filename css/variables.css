@@ -14,7 +14,6 @@
   --box-shadow: 0 0 15px #383fec, 0 0 30px #23ffff, 0 0 45px #383fec;
   --glow-color: hsl(281, 100%, 77%); /* #D795FF */
   --glow-gradient: hsl(270, 40%, 60%); /* #815C98 */
-
   --form2-bg: hsla(267, 100%, 75%, 0.5); /* #B77EFF with 50% opacity */
   --form2-gradient: linear-gradient(135deg, #e9deff 0%, #1e0044 100%);
   --form2-glow: drop-shadow(0 0 10px var(--glow-color))
@@ -26,4 +25,7 @@
     #a1b4ef 67%,
     #cabeff 100%
   );
+  --heading-gradient: linear-gradient(135deg, #ffffff, #d795ff, #7bc2fe);
+  --input-border-gradient: linear-gradient(135deg, #9400ff83, #c64f8783);
+  --input-border-gradient2: linear-gradient(135deg, #ffffff, #d795ff, #7bc2fe);
 }

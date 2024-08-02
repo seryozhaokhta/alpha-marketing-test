@@ -52,25 +52,39 @@
 
 .pagecrm_application-form h2 {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 42px;
+  font-weight: bold;
+  background: var(--heading-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .pagecrm_application-form p {
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
 .pagecrm_application-form input,
 .pagecrm_application-form select,
 .pagecrm_application-form textarea {
-  width: 100%;
-  padding: 10px;
+  width: calc(100% - 60px);
+  font-size: 20px;
+  padding: 20px;
   margin-bottom: 15px;
-  border: none;
-  border-radius: 5px;
+  border: 5px solid transparent;
+  border-radius: 10px;
   background: var(--search-bar-bg);
   color: var(--text-color);
   box-shadow: inset 0 0 5px hsla(0, 0%, 0%, 0.1);
   transition: box-shadow 0.3s, background 0.3s;
+  background-clip: padding-box, border-box;
+}
+
+.pagecrm_application-form input,
+.pagecrm_application-form select,
+.pagecrm_application-form textarea {
+  border-image: var(--input-border-gradient) 1;
 }
 
 .pagecrm_application-form input:focus,
@@ -92,11 +106,11 @@
 
 .pagecrm_application-form button {
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--text-color);
   background-color: var(--cta-bg);
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }

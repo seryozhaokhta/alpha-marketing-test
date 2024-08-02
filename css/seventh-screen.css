@@ -7,9 +7,20 @@
   text-align: center;
 }
 
+.pagecrm_form2-screen h1 {
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .pagecrm_form2-screen h2 {
   font-size: 36px;
+  font-weight: normal;
   margin-bottom: 10px;
+  background: var(--heading-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .pagecrm_form2-screen p {
@@ -79,13 +90,33 @@
 
 .pagecrm_form2-application-form input,
 .pagecrm_form2-application-form select {
-  width: 100%;
-  padding: 10px;
+  width: calc(100% - 60px);
+  font-size: 20px;
+  padding: 20px;
   margin-bottom: 15px;
-  border: none;
-  border-radius: 5px;
+  border: 5px solid transparent;
+  border-radius: 10px;
   background: var(--search-bar-bg);
   color: var(--text-color);
+  box-shadow: inset 0 0 5px hsla(0, 0%, 0%, 0.1);
+  transition: box-shadow 0.3s, background 0.3s;
+  background-clip: padding-box, border-box;
+}
+
+.pagecrm_form2-application-form input,
+.pagecrm_form2-application-form select {
+  border-image: var(--input-border-gradient2) 1;
+}
+
+.pagecrm_form2-application-form input:focus,
+.pagecrm_form2-application-form select:focus {
+  box-shadow: 0 0 10px hsla(0, 0%, 100%, 0.5);
+  background: hsla(0, 0%, 100%, 0.2);
+}
+
+.pagecrm_form2-application-form input::placeholder,
+.pagecrm_form2-application-form select::placeholder {
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 .pagecrm_form2-application-form button {
