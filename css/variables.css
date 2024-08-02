@@ -28,4 +28,5 @@
   --heading-gradient: linear-gradient(135deg, #ffffff, #d795ff, #7bc2fe);
   --input-border-gradient: linear-gradient(135deg, #9400ff83, #c64f8783);
   --input-border-gradient2: linear-gradient(135deg, #ffffff, #d795ff, #7bc2fe);
+  --card-glow: drop-shadow(0 0 10px var(--glow-color)) drop-shadow(0 0 20px var(--glow-color));
 }
