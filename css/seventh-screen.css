@@ -157,11 +157,25 @@
   }
 
   .pagecrm_form2-application-form {
-    width: 344px;
-    height: 438px;
+    width: 100%; /* Сделать ширину формы 100% */
+    max-width: 400px; /* Максимальная ширина формы */
+    height: auto; /* Автоматическая высота */
   }
 
-  .pagecrm_form2-illustration img {
-    max-width: 100%;
+  .pagecrm_form2-illustration {
+    display: none; /* Скрыть иллюстрацию на мобильных */
+  }
+
+  .pagecrm_form2-application-form input,
+  .pagecrm_form2-application-form select {
+    width: calc(100% - 40px); /* Уменьшить отступы */
+  }
+
+  .pagecrm_form2-application-form h3 {
+    font-size: 24px; /* Уменьшить размер заголовка */
+  }
+
+  .pagecrm_form2-application-form p {
+    font-size: 16px; /* Уменьшить размер текста */
   }
 }
