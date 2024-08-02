@@ -185,13 +185,48 @@
     padding: 30px 10px;
   }
 
+  .pagecrm_pricing-title {
+    font-size: 24px;
+  }
+
   .pagecrm_pricing-options {
     flex-direction: column;
     align-items: center;
   }
 
   .pagecrm_pricing-card {
-    width: 340px; /* ширина карточки на мобильных устройствах */
-    height: 247px; /* высота карточки на мобильных устройствах */
+    width: calc(100% - 40px);
+    height: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .pagecrm_pricing-card h3 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .pagecrm_pricing-card h3 span {
+    font-size: 24px;
+  }
+
+  .pagecrm_pricing-card ul {
+    margin-bottom: 10px;
+  }
+
+  .pagecrm_pricing-card li {
+    font-size: 18px;
+  }
+
+  .pagecrm_pricing-card button {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .pagecrm_pricing-card .arrow-icon {
+    width: 16px;
+    height: 16px;
   }
 }

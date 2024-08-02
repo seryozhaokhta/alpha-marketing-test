@@ -147,6 +147,14 @@
 
 /* Адаптивные стили */
 @media (max-width: 768px) {
+  .pagecrm_form2-screen h1 {
+    font-size: 24px;
+  }
+
+  .pagecrm_form2-screen h2 {
+    font-size: 17px;
+  }
+
   .pagecrm_form2-screen {
     padding: 30px 10px;
   }
@@ -157,9 +165,8 @@
   }
 
   .pagecrm_form2-application-form {
-    width: 100%; /* Сделать ширину формы 100% */
-    max-width: 400px; /* Максимальная ширина формы */
-    height: auto; /* Автоматическая высота */
+    width: 344px;
+    height: auto;
   }
 
   .pagecrm_form2-illustration {
