@@ -131,6 +131,11 @@
   background: var(--cta-hover-bg);
 }
 
+.team-title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
 /* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_eighth-screen {
