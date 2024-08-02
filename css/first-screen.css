@@ -1,5 +1,4 @@
 /* css/first-screen.css */
-
 .pagecrm_main {
   text-align: center;
   padding: 50px 100px;
@@ -55,8 +54,9 @@
   position: relative;
 }
 
-.pagecrm_main img {
-  max-width: 50%;
+.crm-illustration {
+  max-width: 100%;
+  height: auto;
   margin-bottom: 20px;
   z-index: 1;
   position: relative;
@@ -105,4 +105,78 @@
 .pagecrm_cta-button:hover {
   background-color: var(--cta-hover-bg);
   box-shadow: var(--box-shadow);
+}
+
+.pagecrm_icon-column {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  right: 0;
+  z-index: 1;
+  justify-content: center;
+  background-color: rgba(29, 1, 65, 0.7);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 20px;
+  margin-right: -10px;
+}
+
+.pagecrm_icon {
+  width: 50px;
+  height: 50px;
+  filter: var(--icon-glow-blue);
+}
+
+.pagecrm_icon.line-icon {
+  width: 50px;
+  height: 2px;
+  filter: none;
+  background-color: rgba(0, 255, 255, 0.8);
+  align-self: center;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  .pagecrm_main {
+    padding: 30px 20px;
+  }
+
+  .pagecrm_breadcrumbs {
+    top: 10px;
+    left: 20px;
+  }
+
+  .pagecrm_main h1 {
+    font-size: 32px;
+  }
+
+  .crm-illustration {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .pagecrm_cta-button {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  .pagecrm_icon-column {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: -10px;
+  }
+
+  .pagecrm_icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .pagecrm_icon.line-icon {
+    width: 40px;
+    height: 1px;
+  }
 }
