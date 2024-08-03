@@ -133,7 +133,19 @@
   }
 
   .pagecrm_application-form h2 {
-    font-size: 20px;
+    font-size: 24px;
+  }
+
+  .pagecrm_application-form p {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 26px;
+  }
+
+  .pagecrm_application-form input,
+  .pagecrm_application-form select,
+  .pagecrm_application-form textarea {
+    font-size: 14px;
   }
 
   .pagecrm_application-form button {

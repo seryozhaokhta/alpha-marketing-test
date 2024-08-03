@@ -42,7 +42,7 @@
   align-items: center;
   text-decoration: none;
   color: var(--text-color);
-  font-size: 36px; /* Размер шрифта для текста ссылок */
+  font-size: 36px;
 }
 
 .pagecrm_partners-list li a .pagecrm_arrow {
@@ -157,7 +157,7 @@
   }
 
   .pagecrm_crm-images img {
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-bottom: 20px;
   }

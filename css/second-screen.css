@@ -33,6 +33,11 @@
     drop-shadow(0 0 20px var(--glow-color));
 }
 
+.pagecrm_feature p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
 .pagecrm_crm-cards {
   display: flex;
   justify-content: space-around;
@@ -87,12 +92,10 @@
     padding: 30px 10px;
   }
 
-  .pagecrm_crm-functions h3 {
-    font-size: 16px;
-  }
-  
   .pagecrm_second-screen h2 {
-    font-size: 28px;
+    font-size: 24px;
+    margin: 0 auto; /* Centering the h2 */
+    max-width: 70%;
   }
 
   .pagecrm_features {
@@ -111,6 +114,11 @@
   .pagecrm_feature-icon {
     width: 100px;
     height: 100px;
+  }
+
+  .pagecrm_feature p {
+    font-size: 14px;
+    font-weight: bold;
   }
 
   .pagecrm_crm-card {

@@ -125,6 +125,25 @@
     padding: 30px 20px;
   }
 
+  .pagecrm_fifth-screen h2 {
+    font-size: 20px;
+  }
+  .pagecrm_fifth-screen h3 {
+    font-size: 18px;
+  }
+
+  .pagecrm_case-card h4 {
+    font-size: 16px;
+  }
+
+  .pagecrm_case-card p {
+    font-size: 14px;
+  }
+
+  .pagecrm_case-card .pagecrm_cta-button {
+    font-size: 16px;
+  }
+
   .pagecrm_case-cards {
     flex-direction: column;
     align-items: center;
