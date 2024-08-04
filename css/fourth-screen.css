@@ -1,22 +1,23 @@
 /* css/fourth-screen.css */
 
 .pagecrm_fourth-screen {
-  padding: 50px 100px;
+  padding: 50px 20px;
   background: var(--bg-color);
   color: var(--text-color);
-  width: 100%; /* Обеспечиваем заполнение всей ширины */
-  height: 100%; /* Обеспечиваем заполнение всей высоты */
-  box-sizing: border-box; /* Учитываем паддинг и бордеры в размерах */
+  text-align: center;
+}
+
+.pagecrm_container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .pagecrm_fourth-screen h2 {
   font-size: 45px;
   margin-bottom: 30px;
-  text-align: center;
 }
 
 .pagecrm_content {
-  max-width: 1400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,22 +27,20 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: none; /* Убираем автоматическое изменение размера */
-  width: 1167px;
-  height: 504px;
+  width: 60%;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 20px;
 }
 
-.pagecrm_crm-benefits .pagecrm_benefit {
+.pagecrm_benefit {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 20px;
 }
 
-.pagecrm_crm-benefits .pagecrm_benefit-icon {
+.pagecrm_benefit-icon {
   width: 90px;
   height: auto;
 }
@@ -53,19 +52,22 @@
 
 .pagecrm_crm-analytics {
   display: flex;
-  justify-content: flex-end; /* перемещает телефон вправо */
-  flex: 1;
+  justify-content: flex-end;
+  width: 40%;
 }
 
-.pagecrm_crm-analytics .pagecrm_analytics-image {
+.pagecrm_analytics-image {
   width: 491px;
   height: auto;
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_fourth-screen {
     padding: 30px 10px;
+  }
+
+  .pagecrm_container {
+    padding: 0 10px;
   }
 
   .pagecrm_crm-benefits .pagecrm_benefit-icon {
@@ -83,13 +85,11 @@
   }
 
   .pagecrm_crm-benefits {
-    width: 340px;
-    height: 266px;
+    width: 100%;
     margin-right: 0;
   }
 
-  .pagecrm_crm-benefits .pagecrm_benefit {
-    flex: none;
+  .pagecrm_benefit {
     width: 100%;
     margin: 10px 0;
   }
@@ -98,7 +98,7 @@
     font-size: 14px;
   }
 
-  .pagecrm_crm-analytics .pagecrm_analytics-image {
+  .pagecrm_analytics-image {
     display: none;
   }
 }

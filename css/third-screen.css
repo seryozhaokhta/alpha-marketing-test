@@ -11,14 +11,14 @@
 .pagecrm_application-form {
   position: relative;
   background: hsla(272, 90%, 23%, 0.49);
-  box-shadow: var(--form-shadow); /* Use the new shadow variable */
+  box-shadow: var(--form-shadow);
   padding: 44px 80px 44px 80px;
   border-radius: 32px;
   width: 652px;
   height: 776px;
   text-align: center;
   color: var(--text-color);
-  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for box-shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -48,7 +48,7 @@
 
 .pagecrm_application-form:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 20px #9662FF; /* Increase the shadow intensity on hover */
+  box-shadow: 0 0 20px #9662FF;
 }
 
 .pagecrm_application-form h2 {
@@ -63,7 +63,7 @@
 
 .pagecrm_application-form p {
   font-size: 20px;
-  margin-bottom: 17px; /* Уменьшенный отступ */
+  margin-bottom: 17px;
 }
 
 .pagecrm_application-form input,
@@ -71,7 +71,7 @@
 .pagecrm_application-form textarea {
   font-size: 20px;
   padding: 20px;
-  margin-bottom: 17px; /* Уменьшенный отступ */
+  margin-bottom: 17px;
   border: 5px solid transparent;
   border-radius: 10px;
   background: var(--search-bar-bg);
@@ -118,7 +118,7 @@
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 10px;
-  padding-right: 40px; /* Достаточно места для иконки стрелки */
+  padding-right: 40px;
 }
 
 .pagecrm_application-form select:focus {
@@ -153,7 +153,6 @@
   transform: scale(1.05);
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_third-screen {
     padding: 30px 10px;
@@ -161,8 +160,8 @@
 
   .pagecrm_application-form {
     padding: 20px;
-    width: 340px; /* Ширина формы на мобильных устройствах */
-    height: 612px; /* Высота формы на мобильных устройствах */
+    width: 340px;
+    height: 612px;
   }
 
   .pagecrm_application-form h2 {

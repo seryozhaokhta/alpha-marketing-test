@@ -71,7 +71,7 @@
 }
 
 .pagecrm_pricing-card h3 span {
-  font-size: 36px; /* увеличенный кегль цены */
+  font-size: 36px;
   color: var(--text-color);
 }
 
@@ -108,8 +108,8 @@
   transition: background-color 0.3s, transform 0.3s;
   display: flex;
   align-items: center;
-  justify-content: center; /* Выровнять по центру */
-  text-align: center; /* Выровнять текст по центру */
+  justify-content: center;
+  text-align: center;
   gap: 10px;
   margin-top: auto;
   align-self: center;
@@ -194,7 +194,6 @@
   background: var(--cta-hover-bg);
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_sixth-screen {
     padding: 30px 10px;

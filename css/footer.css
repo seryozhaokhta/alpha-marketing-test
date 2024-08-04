@@ -1,12 +1,16 @@
 /* css/footer.css */
 
 .pagecrm_footer {
-  display: flex;
   flex-direction: column;
   padding: 40px;
   background: var(--bg-color);
   color: var(--text-color);
   position: relative;
+}
+
+.pagecrm_container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .pagecrm_footer-content {
@@ -16,10 +20,19 @@
   flex-wrap: wrap;
 }
 
-.pagecrm_footer-menu,
-.pagecrm_footer-contacts,
+.pagecrm_footer-menu {
+  flex: 1;
+  text-align: left;
+}
+
+.pagecrm_footer-contacts {
+  flex: 1;
+  text-align: left;
+}
+
 .pagecrm_map-container {
   flex: 1;
+  text-align: right;
 }
 
 .pagecrm_footer-menu h2,
@@ -81,15 +94,15 @@
 .pagecrm_map-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .pagecrm_map {
-  width: 522.56px; /* Adjust the width for desktop */
-  height: 346px; /* Adjust the height for desktop */
+  width: 522.56px;
+  height: 346px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), var(--box-shadow); /* добавляем свечение */
-  margin: 0 auto; /* Center map on desktop */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), var(--box-shadow);
+  margin: 0 auto;
 }
 
 .pagecrm_social-icons {
@@ -167,7 +180,7 @@
 
   .pagecrm_footer-contacts p {
     font-size: 24px;
-    margin-bottom: -15px; /* Уменьшено для сокращения расстояния */
+    margin-bottom: -15px;
     font-weight: 400;
   }
 

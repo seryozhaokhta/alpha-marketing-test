@@ -1,10 +1,15 @@
 /* css/fifth-screen.css */
 
 .pagecrm_fifth-screen {
-  padding: 50px 100px;
+  padding: 50px 20px;
   background: var(--bg-color);
   text-align: center;
   color: var(--text-color);
+}
+
+.pagecrm_container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .pagecrm_fifth-screen h2 {
@@ -30,17 +35,16 @@
 
 .pagecrm_case-cards {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 32px; /* Задаем отступ между карточками */
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 32px;
 }
 
 .pagecrm_case-card {
-  width: 684px;
+  width: calc(50% - 16px);
   height: 243px;
   position: relative;
   transition: transform 0.3s;
-  margin: 16px; /* Задаем половину отступа для равномерного распределения */
 }
 
 .pagecrm_case-card-container {
@@ -70,7 +74,7 @@
   transform: scale(1.05);
 }
 
-.pagecrm_case-card .pagecrm_case-logo {
+.pagecrm_case-logo {
   width: 273px;
   height: 185px;
   border-radius: 10px;
@@ -93,22 +97,20 @@
   margin: 5px 0;
 }
 
-.pagecrm_case-card .pagecrm_cta-button {
+.pagecrm_cta-button {
   display: inline-block;
   margin-top: 10px;
-  padding: 11px 34px 12px 34px;
+  padding: 11px 34px;
   font-size: 20px;
   font-weight: bold;
   color: var(--text-color);
   background-color: var(--cta-bg);
   border: none;
   border-radius: 10px;
-  width: auto;
-  height: auto;
   text-decoration: none;
 }
 
-.pagecrm_case-card .pagecrm_cta-button:hover {
+.pagecrm_cta-button:hover {
   background-color: var(--cta-hover-bg);
 }
 
@@ -120,10 +122,13 @@
   font-weight: bold;
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_fifth-screen {
     padding: 30px 20px;
+  }
+
+  .pagecrm_container {
+    padding: 0 10px;
   }
 
   .pagecrm_fifth-screen h2 {
@@ -142,20 +147,20 @@
     font-size: 14px;
   }
 
-  .pagecrm_case-card .pagecrm_cta-button {
+  .pagecrm_cta-button {
     font-size: 16px;
   }
 
   .pagecrm_case-cards {
     flex-direction: column;
     align-items: center;
-    gap: 16px; /* Уменьшаем отступ для мобильных устройств */
+    gap: 16px;
   }
 
   .pagecrm_case-card {
-    width: 340px;
-    height: 383px;
-    margin: 0; /* Убираем дополнительный отступ на мобильных устройствах */
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
 
   .pagecrm_case-card-container {
@@ -163,7 +168,7 @@
     text-align: center;
   }
 
-  .pagecrm_case-card .pagecrm_case-logo {
+  .pagecrm_case-logo {
     margin-right: 0;
     margin-bottom: 20px;
   }

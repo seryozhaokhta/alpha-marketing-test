@@ -1,11 +1,15 @@
 /* css/seventh-screen.css */
 
 .pagecrm_form2-screen {
-  padding: 50px;
-
+  padding: 50px 20px;
   background: var(--bg-color);
   color: var(--text-color);
   text-align: center;
+}
+
+.pagecrm_container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .pagecrm_form2-screen h1 {
@@ -33,7 +37,7 @@
 
 .pagecrm_form2-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 50px;
 }
@@ -43,9 +47,9 @@
   background: var(--form2-bg);
   padding: 20px;
   border-radius: 32px;
-  width: 912px;
-  height: 565px;
-  text-align: center; /* Center align text inside the form */
+  width: 684px;
+  height: auto;
+  text-align: center;
   color: var(--text-color);
   transition: transform 0.3s;
   overflow: hidden;
@@ -83,13 +87,13 @@
   font-weight: bold;
   color: var(--text-color);
   margin-bottom: 15px;
-  text-align: center; /* Center align heading */
+  text-align: center;
 }
 
 .pagecrm_form2-application-form p {
   font-size: 20px;
   margin-bottom: 20px;
-  text-align: center; /* Center align paragraph */
+  text-align: center;
 }
 
 .pagecrm_form2-application-form input,
@@ -151,11 +155,10 @@
 .pagecrm_form2-illustration img {
   max-width: 100%;
   height: auto;
-  filter: var(--globe-glow); /* Apply the new globe glow variable */
-  box-shadow: var(--card-glow); /* Apply the box shadow for the glow effect */
+  filter: var(--globe-glow);
+  box-shadow: var(--card-glow);
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_form2-screen h1 {
     font-size: 24px;
@@ -167,6 +170,10 @@
 
   .pagecrm_form2-screen {
     padding: 30px 10px;
+  }
+
+  .pagecrm_container {
+    padding: 0 10px;
   }
 
   .pagecrm_form2-container {

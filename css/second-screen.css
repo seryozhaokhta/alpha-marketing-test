@@ -7,6 +7,11 @@
   text-align: center;
 }
 
+.pagecrm_container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .pagecrm_second-screen h2 {
   font-size: 45px;
   margin-bottom: 40px;
@@ -29,8 +34,7 @@
   width: 140px;
   height: 140px;
   margin-bottom: 10px;
-  filter: drop-shadow(0 0 10px var(--glow-color))
-    drop-shadow(0 0 20px var(--glow-color));
+  filter: drop-shadow(0 0 10px var(--glow-color)) drop-shadow(0 0 20px var(--glow-color));
 }
 
 .pagecrm_feature p {
@@ -40,17 +44,18 @@
 
 .pagecrm_crm-cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .pagecrm_crm-card {
   background: none;
   border-radius: 20px;
   overflow: hidden;
-  width: 690px;
+  width: 48%;
   height: 320px;
-  margin: 20px;
+  margin: 20px 0;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -84,7 +89,6 @@
   margin-bottom: 10px;
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_second-screen {
     padding: 30px 10px;
@@ -92,7 +96,7 @@
 
   .pagecrm_second-screen h2 {
     font-size: 24px;
-    margin: 0 auto; /* Centering the h2 */
+    margin: 0 auto;
     max-width: 70%;
   }
 
@@ -117,6 +121,12 @@
   .pagecrm_feature p {
     font-size: 14px;
     font-weight: bold;
+  }
+
+  .pagecrm_crm-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .pagecrm_crm-card {

@@ -137,7 +137,6 @@
   align-self: center;
 }
 
-/* Адаптивные стили */
 @media (max-width: 768px) {
   .pagecrm_main {
     padding: 30px 20px;

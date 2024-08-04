@@ -204,7 +204,6 @@
   transition: all 0.3s;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .pagecrm_header {
     padding: 10px 20px;
