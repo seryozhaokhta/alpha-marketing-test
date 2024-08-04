@@ -2,8 +2,7 @@
 
 :root {
   --font-family: "Play", sans-serif;
-  --link-glow: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6))
-    drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+  --link-glow: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
   --bg-color: hsl(270, 100%, 34%);
   --text-color: white;
   --header-bg: hsla(265, 97%, 13%, 0.3);
@@ -18,24 +17,17 @@
   --glow-gradient: hsl(270, 40%, 60%); /* #815C98 */
   --form2-bg: hsla(267, 100%, 75%, 0.5); /* #B77EFF with 50% opacity */
   --form2-gradient: linear-gradient(135deg, #e9deff 0%, #1e0044 100%);
-  --form2-glow: drop-shadow(0 0 10px var(--glow-color))
-    drop-shadow(0 0 20px var(--glow-color));
-  --button-border-gradient: linear-gradient(
-    135deg,
-    #59f8d2 9%,
-    #74dfdd 31%,
-    #a1b4ef 67%,
-    #cabeff 100%
-  );
+  --form2-glow: drop-shadow(0 0 10px var(--glow-color)) drop-shadow(0 0 20px var(--glow-color));
+  --button-border-gradient: linear-gradient(135deg, #59f8d2 9%, #74dfdd 31%, #a1b4ef 67%, #cabeff 100%);
   --cta-form2-bg: hsla(267, 100%, 75%, 0.5); /* New variable for form2 background */
   --form-shadow: 0 0 10px #9662FF; /* New variable for form shadow */
   --heading-gradient: linear-gradient(135deg, #ffffff, #d795ff, #7bc2fe);
   --input-border-gradient: linear-gradient(135deg, #9400ff83, #c64f8783);
   --input-border-gradient2: linear-gradient(135deg, #ffffff, #d795ff, #7bc2fe);
-  --card-glow: drop-shadow(0 0 10px var(--glow-color))
-    drop-shadow(0 0 20px var(--glow-color));
-  --icon-glow-blue: drop-shadow(0 0 10px rgba(0, 255, 255, 0.6))
-    drop-shadow(0 0 20px rgba(0, 255, 255, 0.8));
-  --globe-glow: drop-shadow(0 0 20px rgba(255, 255, 255, 0.6))
-    drop-shadow(0 0 30px rgba(255, 255, 255, 0.8));
+  --card-glow: drop-shadow(0 0 10px var(--glow-color)) drop-shadow(0 0 20px var(--glow-color));
+  --card-border-gradient: linear-gradient(135deg, #59f8d2, #74dfdd, #a1b4ef, #cabeff); /* New variable for card border */
+  --button-border-gradient: linear-gradient(135deg, #d795ff, #7bc2fe, #ffffff); /* Gradient for button border */
+  --card-bg-gradient: linear-gradient(135deg, #1e0044, #e9deff); /* Gradient for card background */
+  --icon-glow-blue: drop-shadow(0 0 10px rgba(0, 255, 255, 0.6)) drop-shadow(0 0 20px rgba(0, 255, 255, 0.8));
+  --globe-glow: drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.8));
 }
