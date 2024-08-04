@@ -38,8 +38,8 @@
 }
 
 .pagecrm_crm-benefits .pagecrm_benefit-icon {
-  width: 40px;
-  height: 40px;
+  width: 90px;
+  height: auto;
 }
 
 .pagecrm_crm-benefits p {
@@ -62,6 +62,11 @@
 @media (max-width: 768px) {
   .pagecrm_fourth-screen {
     padding: 30px 10px;
+  }
+
+  .pagecrm_crm-benefits .pagecrm_benefit-icon {
+    width: 40px;
+    height: auto;
   }
 
   .pagecrm_fourth-screen h2 {
