@@ -41,7 +41,6 @@
 .pagecrm_form2-application-form {
   position: relative;
   background: var(--form2-bg);
-  filter: var(--form2-glow);
   padding: 20px;
   border-radius: 32px;
   width: 912px;
