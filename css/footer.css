@@ -6,6 +6,7 @@
   padding: 40px;
   background: var(--bg-color);
   color: var(--text-color);
+  position: relative; 
 }
 
 .pagecrm_footer-menu,
@@ -83,11 +84,28 @@
 }
 
 .pagecrm_map {
-  width: 100%;
-  height: 300px;
-  margin-top: 20px;
+  width: 522.56px; /* Adjust the width for desktop */
+  height: 346px; /* Adjust the height for desktop */
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), var(--box-shadow); /* добавляем свечение */
+}
+
+/* Styles for the footer text */
+.pagecrm_footer-text {
+  font-size: 10px;
+  color: var(--text-color);
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+}
+
+.pagecrm_footer-text a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -103,5 +121,20 @@
 
   .pagecrm_logo {
     margin-top: 10px;
+  }
+
+  .pagecrm_map {
+    position: relative;
+    width: 341px; /* Adjust the width for mobile */
+    height: 203px; /* Adjust the height for mobile */
+    margin-top: 20px;
+  }
+
+  .pagecrm_footer-text {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 20px;
   }
 }
