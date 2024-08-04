@@ -2,6 +2,7 @@
 
 .pagecrm_form2-screen {
   padding: 50px;
+
   background: var(--bg-color);
   color: var(--text-color);
   text-align: center;
@@ -125,13 +126,17 @@
 
 .pagecrm_form2-application-form button {
   padding: 15px 30px;
-  font-size: 16px;
+  font-size: 20px;
   background: var(--cta-bg);
   color: var(--text-color);
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
+  border: 2px solid transparent;
+  background-image: linear-gradient(var(--cta-bg), var(--cta-bg)), var(--button-border-gradient);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .pagecrm_form2-application-form button:hover {
