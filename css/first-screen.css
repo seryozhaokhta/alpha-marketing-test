@@ -45,8 +45,10 @@
 
 .pagecrm_breadcrumbs {
   position: absolute;
-  top: 20px;
-  left: 100px;
+  font-size: 12px;
+  font-weight: normal;
+  top: 24px;
+  left: 102px;
   margin-bottom: 20px;
   z-index: 2;
 }

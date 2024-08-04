@@ -70,7 +70,7 @@
 .pagecrm_header nav a {
   color: var(--text-color);
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 400;
   transition: filter 0.3s;
 }
 
@@ -81,7 +81,7 @@
 .pagecrm_header .contact-info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 34px;
 }
 
 .pagecrm_header .contact-info .icon {
