@@ -2,17 +2,24 @@
 
 .pagecrm_footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 40px;
   background: var(--bg-color);
   color: var(--text-color);
-  position: relative; 
+  position: relative;
+}
+
+.pagecrm_footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 .pagecrm_footer-menu,
-.pagecrm_footer-contacts {
+.pagecrm_footer-contacts,
+.pagecrm_map-container {
   flex: 1;
-  padding: 20px;
 }
 
 .pagecrm_footer-menu h2,
@@ -63,6 +70,7 @@
 .pagecrm_footer-contacts p {
   font-size: 24px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .pagecrm_footer-contacts a {
@@ -70,7 +78,25 @@
   text-decoration: none;
 }
 
+.pagecrm_map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pagecrm_map {
+  width: 522.56px; /* Adjust the width for desktop */
+  height: 346px; /* Adjust the height for desktop */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), var(--box-shadow); /* добавляем свечение */
+  margin: 0 auto; /* Center map on desktop */
+}
+
 .pagecrm_social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 20px 0;
 }
 
@@ -83,23 +109,11 @@
   height: 24px;
 }
 
-.pagecrm_map {
-  width: 522.56px; /* Adjust the width for desktop */
-  height: 346px; /* Adjust the height for desktop */
-  position: absolute;
-  right: 40px;
-  bottom: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), var(--box-shadow); /* добавляем свечение */
-}
-
-/* Styles for the footer text */
 .pagecrm_footer-text {
   font-size: 10px;
   color: var(--text-color);
-  position: absolute;
-  bottom: 10px;
-  left: 40px;
+  text-align: left;
+  margin-top: 20px;
 }
 
 .pagecrm_footer-text a {
@@ -109,32 +123,143 @@
 }
 
 @media (max-width: 768px) {
-  .pagecrm_footer {
+  .pagecrm_footer-content {
     flex-direction: column;
-    padding: 20px;
+    align-items: left;
   }
 
-  .pagecrm_footer-menu,
-  .pagecrm_footer-contacts {
-    padding: 10px;
+  .pagecrm_footer-menu {
+    display: none;
+  }
+
+  .pagecrm_footer-contacts h2 {
+    text-align: center;
+    font-size: 32px;
   }
 
   .pagecrm_logo {
-    margin-top: 10px;
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .pagecrm_logo img {
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .pagecrm_logo span {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .pagecrm_logo small {
+    display: block;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .pagecrm_footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+  }
+
+  .pagecrm_footer-contacts p {
+    font-size: 24px;
+    margin-bottom: -15px; /* Уменьшено для сокращения расстояния */
+    font-weight: 400;
+  }
+
+  .pagecrm_footer-contacts a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .pagecrm_social-icons.mobile-icons {
+    display: flex;
+    margin: 20px 0;
+  }
+
+  .pagecrm_social-icons.desktop-icons {
+    display: none;
+  }
+
+  .pagecrm_social-icons a {
+    margin: 0 10px;
+  }
+
+  .pagecrm_social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .pagecrm_map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 57px;
   }
 
   .pagecrm_map {
-    position: relative;
-    width: 341px; /* Adjust the width for mobile */
-    height: 203px; /* Adjust the height for mobile */
+    width: auto;
+    height: 203px;
     margin-top: 20px;
+    align-items: center;
+  }
+
+  .pagecrm_logo.mobile-logo {
+    display: flex;
+    padding-top: 57px;
+    padding-bottom: 38px;
   }
 
   .pagecrm_footer-text {
-    position: relative;
-    bottom: 0;
-    left: 0;
+    font-size: 10px;
+    color: var(--text-color);
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pagecrm_footer-text a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 5px 0 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .pagecrm_logo.mobile-logo {
+    display: none;
+  }
+
+  .pagecrm_social-icons.mobile-icons {
+    display: none;
+  }
+
+  .pagecrm_social-icons.desktop-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .desktop-icons a {
+    margin-right: 10px;
+  }
+
+  .pagecrm_footer-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  .pagecrm_footer-text a {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
