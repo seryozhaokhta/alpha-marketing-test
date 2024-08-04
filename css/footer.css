@@ -16,7 +16,8 @@
 
 .pagecrm_footer-menu h2,
 .pagecrm_footer-contacts h2 {
-  font-size: 24px;
+  font-size: 36px;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
@@ -32,7 +33,8 @@
 .pagecrm_footer-menu ul li a {
   color: var(--text-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 36px;
+  font-weight: 400;
 }
 
 .pagecrm_logo {
@@ -58,7 +60,7 @@
 }
 
 .pagecrm_footer-contacts p {
-  font-size: 18px;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
