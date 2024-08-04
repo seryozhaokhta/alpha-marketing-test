@@ -30,9 +30,9 @@
 
 .pagecrm_case-cards {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 32px; /* Задаем отступ между карточками */
 }
 
 .pagecrm_case-card {
@@ -40,6 +40,7 @@
   height: 243px;
   position: relative;
   transition: transform 0.3s;
+  margin: 16px; /* Задаем половину отступа для равномерного распределения */
 }
 
 .pagecrm_case-card-container {
@@ -128,6 +129,7 @@
   .pagecrm_fifth-screen h2 {
     font-size: 20px;
   }
+
   .pagecrm_fifth-screen h3 {
     font-size: 18px;
   }
@@ -147,11 +149,13 @@
   .pagecrm_case-cards {
     flex-direction: column;
     align-items: center;
+    gap: 16px; /* Уменьшаем отступ для мобильных устройств */
   }
 
   .pagecrm_case-card {
     width: 340px;
     height: 383px;
+    margin: 0; /* Убираем дополнительный отступ на мобильных устройствах */
   }
 
   .pagecrm_case-card-container {

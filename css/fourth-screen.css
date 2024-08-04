@@ -4,6 +4,9 @@
   padding: 50px 100px;
   background: var(--bg-color);
   color: var(--text-color);
+  width: 100%; /* Обеспечиваем заполнение всей ширины */
+  height: 100%; /* Обеспечиваем заполнение всей высоты */
+  box-sizing: border-box; /* Учитываем паддинг и бордеры в размерах */
 }
 
 .pagecrm_fourth-screen h2 {
@@ -54,7 +57,7 @@
 }
 
 .pagecrm_crm-analytics .pagecrm_analytics-image {
-  max-width: 70%;
+  width: 491px;
   height: auto;
 }
 
@@ -95,6 +98,6 @@
   }
 
   .pagecrm_crm-analytics .pagecrm_analytics-image {
-    display: none; /* скрывает картинку на мобильной версии */
+    display: none;
   }
 }
