@@ -86,13 +86,12 @@
 }
 
 .pagecrm_header .contact-info .icon {
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  width: 15px;
+  height: auto;
 }
 
 .pagecrm_header .contact-info .phone-icon {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .pagecrm_header .contact-info .contact-button {
@@ -102,7 +101,7 @@
   color: var(--text-color);
   text-decoration: none;
   background-color: var(--cta-bg);
-  padding: 20px 15px;
+  padding: 15px 20px;
   border-radius: 10px;
   border: 1px solid transparent;
   background-image: linear-gradient(var(--cta-bg), var(--cta-bg)),
