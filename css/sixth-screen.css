@@ -150,14 +150,16 @@
 }
 
 .pagecrm_modal-content {
-  background-color: var(--bg-color);
+  background-color: rgba(183, 126, 255, 0.4);
   margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   max-width: 600px;
-  border-radius: 10px;
+  border-radius: 32px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(20px);
 }
 
 .pagecrm_close {
@@ -174,30 +176,73 @@
   cursor: pointer;
 }
 
-.pagecrm_form-container h2,
-.pagecrm_form-container p,
-.pagecrm_form-container input,
-.pagecrm_form-container button {
+.pagecrm_modal-content h2,
+.pagecrm_modal-content p,
+.pagecrm_modal-content input,
+.pagecrm_modal-content button {
   color: var(--text-color);
 }
 
-.pagecrm_form-container input,
-.pagecrm_form-container button {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 5px;
+.pagecrm_modal-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.pagecrm_form-container button {
+.pagecrm_modal-content form input,
+.pagecrm_modal-content form button {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.pagecrm_modal-content form button {
+  height: 53px; /* Высота кнопки */
   background: var(--cta-bg);
   color: var(--text-color);
   cursor: pointer;
+  font-size: 16px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-.pagecrm_form-container button:hover {
+.pagecrm_modal-content form button:hover {
   background: var(--cta-hover-bg);
+}
+
+.pagecrm_modal-content form p {
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.policy-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.policy-container input {
+  margin-right: 10px;
+  width: 14px; /* Уменьшаем ширину чекбокса */
+  height: 14px; /* Уменьшаем высоту чекбокса */
+}
+
+.policy-container label {
+  display: flex;
+  align-items: center;
+}
+
+.policy-container a {
+  color: var(--text-color);
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -253,5 +298,25 @@
   .pagecrm_pricing-card .arrow-icon {
     width: 16px;
     height: 16px;
+  }
+
+  .pagecrm_modal-content form input,
+  .pagecrm_modal-content form button {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  .pagecrm_modal-content form button {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .policy-container input {
+    width: 14px;
+    height: 14px;
   }
 }

@@ -80,13 +80,13 @@
   padding: 0;
 }
 
-.pagecrm_crm-functions li {
-}
+/* .pagecrm_crm-functions li {
+} */
 
 @media (max-width: 768px) {
-  .pagecrm_second-screen {
+  /* .pagecrm_second-screen {
 
-  }
+  } */
 
   .pagecrm_second-screen h2 {
     font-size: 24px;

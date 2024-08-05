@@ -247,7 +247,7 @@
                 alt="Checkmark"
                 class="pagecrm_benefit-icon"
               />
-              <p>Любому бизнесу, работающему<br>с клиентской базой</p>
+              <p>Любому бизнесу, работающему<br />с клиентской базой</p>
             </div>
             <div class="pagecrm_benefit">
               <img
@@ -263,7 +263,9 @@
                 alt="Checkmark"
                 class="pagecrm_benefit-icon"
               />
-              <p>Бизнесу, где есть задачи, планирование,<br>отчетность и KPI</p>
+              <p>
+                Бизнесу, где есть задачи, планирование,<br />отчетность и KPI
+              </p>
             </div>
           </div>
           <div class="pagecrm_crm-analytics-wrapper">
@@ -411,8 +413,15 @@
             минут
           </p>
           <input type="text" name="name" placeholder="Имя" required />
-          <input type="tel" name="phone" placeholder="Телефон" required />
-          <button type="submit">Отправить заявку</button>
+          <input type="email" name="email" placeholder="Эл.почта" required />
+          <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+          <div class="policy-container">
+            <input type="checkbox" id="policy" name="policy" required />
+            <label for="policy">
+              Нажимая на кнопку, я соглашаюсь с условиями
+              <a href="#">Политики конфиденциальности</a>
+            </label>
+          </div>
         </form>
       </div>
     </div>
