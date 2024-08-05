@@ -104,8 +104,8 @@
   font-size: 24px;
   color: var(--text-color);
   background: var(--cta-bg-semi-transparent); /* Полупрозрачный фон */
-  border: 2px solid transparent;
-  border-radius: 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
   text-decoration: none;
   z-index: 2;
   position: relative;
