@@ -64,11 +64,12 @@
 
 .pagecrm_header nav {
   display: flex;
-  gap: 36px;
+  gap: 34px;
 }
 
 .pagecrm_header nav a {
   color: var(--text-color);
+  padding: 12px;
   text-decoration: none;
   font-weight: 00;
   transition: filter 0.3s;
@@ -129,7 +130,6 @@
 .pagecrm_header .search-bar-desktop {
   display: flex;
   align-items: center;
-  margin-left: 20px;
 }
 
 .pagecrm_header .search-bar-desktop button {
