@@ -5,6 +5,7 @@
   background: none;
   color: var(--text-color);
   text-align: center;
+  position: relative; /* Добавляем относительное позиционирование для секции */
 }
 
 .pagecrm_container {
@@ -37,9 +38,9 @@
 
 .pagecrm_form2-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Центрируем контейнер */
   align-items: center;
-  gap: 50px;
+  position: relative; /* Добавляем относительное позиционирование для контейнера */
 }
 
 .pagecrm_form2-application-form {
@@ -53,6 +54,8 @@
   color: var(--text-color);
   transition: transform 0.3s;
   overflow: hidden;
+  z-index: 1; /* Устанавливаем z-index для формы */
+  margin-right: 50px; /* Отодвигаем форму от глобуса */
 }
 
 .pagecrm_form2-application-form::before {
@@ -147,14 +150,16 @@
 }
 
 .pagecrm_form2-illustration {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute; /* Используем абсолютное позиционирование */
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2; /* Устанавливаем z-index больше, чем у формы */
 }
 
 .pagecrm_form2-illustration img {
-  max-width: 100%;
-  height: auto;
+  max-width: 537px; /* Устанавливаем ширину изображения */
+  height: 489px; /* Устанавливаем высоту изображения */
   filter: var(--globe-glow);
   box-shadow: var(--card-glow);
 }
@@ -184,6 +189,7 @@
   .pagecrm_form2-application-form {
     width: auto;
     height: auto;
+    margin-right: 0; /* Убираем отступ для мобильной версии */
   }
 
   .pagecrm_form2-illustration {
