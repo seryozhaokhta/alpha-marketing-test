@@ -130,7 +130,7 @@
   border-radius: 20px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background-image: linear-gradient(var(--cta-bg), var(--cta-bg)),
     var(--button-border-gradient);
   background-origin: border-box;

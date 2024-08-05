@@ -104,7 +104,7 @@
   background-color: var(--cta-bg);
   padding: 10px 20px;
   border-radius: 10px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background-image: linear-gradient(var(--cta-bg), var(--cta-bg)),
     var(--button-border-gradient);
   background-origin: border-box;

@@ -105,6 +105,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
+  backdrop-filter: blur(15px);
 }
 
 .pagecrm_form3-form input,
@@ -134,10 +135,15 @@
   color: var(--text-color);
   cursor: pointer;
   align-self: flex-start; /* Слева */
+  border: 1px solid transparent;
+  background-image: linear-gradient(var(--cta-bg), var(--cta-bg)), var(--button-border-gradient);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .pagecrm_form3-form button:hover {
-  background: var(--cta-hover-bg);
+  box-shadow: var(--box-shadow);
 }
 
 .team-title {

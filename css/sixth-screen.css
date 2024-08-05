@@ -42,7 +42,7 @@
   width: 690px;
   height: 389px;
   box-shadow: var(--box-shadow);
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background-image: linear-gradient(var(--bg-color), var(--bg-color)),
     var(--card-border-gradient);
   background-origin: border-box;
@@ -118,7 +118,7 @@
   gap: 10px;
   margin-top: auto;
   align-self: center;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   background-image: linear-gradient(var(--cta-bg), var(--cta-bg)),
     var(--button-border-gradient);
   background-origin: border-box;
@@ -126,7 +126,7 @@
 }
 
 .pagecrm_pricing-card button:hover {
-  background: var(--cta-hover-bg);
+  box-shadow: var(--box-shadow);
   transform: scale(1.05);
 }
 
@@ -193,7 +193,7 @@
 .pagecrm_modal-content form button {
   padding: 10px 15px;
   margin-bottom: 10px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   border-radius: 10px;
   font-size: 16px;
   box-sizing: border-box;
@@ -205,13 +205,13 @@
   color: var(--text-color);
   cursor: pointer;
   font-size: 16px;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   border-radius: 20px;
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .pagecrm_modal-content form button:hover {
-  background: var(--cta-hover-bg);
+
 }
 
 .pagecrm_modal-content form p {
