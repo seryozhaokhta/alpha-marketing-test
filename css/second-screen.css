@@ -34,7 +34,8 @@
   width: 140px;
   height: 140px;
   margin-bottom: 10px;
-  filter: drop-shadow(0 0 10px var(--glow-color)) drop-shadow(0 0 20px var(--glow-color));
+  filter: drop-shadow(0 0 10px var(--glow-color))
+    drop-shadow(0 0 20px var(--glow-color));
 }
 
 .pagecrm_feature p {
@@ -46,28 +47,24 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .pagecrm_crm-card {
   background: none;
   border-radius: 20px;
   overflow: hidden;
-  width: 48%;
   height: 320px;
   margin: 20px 0;
   display: flex;
-  align-items: center;
-  justify-content: start;
+  align-items: stretch;
   text-align: left;
   box-shadow: var(--box-shadow);
 }
 
 .pagecrm_crm-image {
   width: 50%;
-  height: 100%;
   object-fit: cover;
-  margin-right: 20px;
+  height: 100%;
 }
 
 .pagecrm_crm-functions {
@@ -85,13 +82,12 @@
 }
 
 .pagecrm_crm-functions li {
-  padding-left: 25px;
-  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
   .pagecrm_second-screen {
     padding: 30px 10px;
+    max-width: calc(100% -60px);
   }
 
   .pagecrm_second-screen h2 {
@@ -110,12 +106,11 @@
     flex: none;
     width: 100%;
     max-width: none;
-    margin: 10px;
   }
 
   .pagecrm_feature-icon {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
   }
 
   .pagecrm_feature p {
@@ -128,21 +123,13 @@
     flex-direction: column;
     align-items: center;
   }
-
+  
   .pagecrm_crm-card {
-    flex: none;
-    width: 100%;
-    margin: 10px 0;
-    flex-direction: row;
-    text-align: left;
-    height: auto;
-  }
+    background: none;
 
-  .pagecrm_crm-image {
-    object-fit: cover;
-    width: 50%;
-    height: 100%;
-    margin-right: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 250px;
   }
 
   .pagecrm_crm-functions {
