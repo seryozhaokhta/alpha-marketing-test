@@ -2,7 +2,7 @@
 
 .pagecrm_fifth-screen {
   padding: 50px 20px;
-  background: var(--bg-color);
+  background: none;
   text-align: center;
   color: var(--text-color);
 }

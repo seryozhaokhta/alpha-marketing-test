@@ -3,7 +3,7 @@
 .pagecrm_footer {
   flex-direction: column;
   padding: 40px;
-  background: var(--bg-color);
+  background: none;
   color: var(--text-color);
   position: relative;
 }

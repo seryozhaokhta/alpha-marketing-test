@@ -2,7 +2,7 @@
 
 .pagecrm_form2-screen {
   padding: 50px 20px;
-  background: var(--bg-color);
+  background: none;
   color: var(--text-color);
   text-align: center;
 }

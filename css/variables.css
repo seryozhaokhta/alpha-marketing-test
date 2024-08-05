@@ -1,6 +1,10 @@
 /* css/variables.css */
 
 :root {
+  --background-image: url("../images/Фон_Страница_CRM.png");
+  --background-size: cover; /* Или другие значения, как contain, если требуется */
+  --background-repeat: no-repeat;
+  --background-position: top center;
   --font-family: "Play", sans-serif;
   --link-glow: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
   --bg-color: hsl(270, 100%, 34%);

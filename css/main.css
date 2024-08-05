@@ -12,10 +12,13 @@
 @import url("eighth-screen.css");
 @import url("footer.css");
 
-/* Основные стили */
 body {
   font-family: var(--font-family);
   margin: 0;
   padding: 0;
   color: var(--text-color);
+  background-image: var(--background-image);
+  background-size: var(--background-size);
+  background-repeat: var(--background-repeat);
+  background-position: var(--background-position);
 }

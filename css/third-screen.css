@@ -2,7 +2,7 @@
 
 .pagecrm_third-screen {
   padding: 50px;
-  background: var(--bg-color);
+  background: none;
   display: flex;
   justify-content: center;
   align-items: center;

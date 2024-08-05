@@ -2,7 +2,7 @@
 
 .pagecrm_sixth-screen {
   padding: 50px 20px;
-  background: var(--bg-color);
+  background: none;
   color: var(--text-color);
   text-align: center;
 }
@@ -43,7 +43,8 @@
   height: 389px;
   box-shadow: var(--box-shadow);
   border: 2px solid transparent;
-  background-image: linear-gradient(var(--bg-color), var(--bg-color)), var(--card-border-gradient);
+  background-image: linear-gradient(var(--bg-color), var(--bg-color)),
+    var(--card-border-gradient);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   transition: transform 0.3s, background 0.3s;
@@ -59,7 +60,11 @@
 
 .pagecrm_pricing-card h3 {
   padding: 20px;
-  background: linear-gradient(135deg, hsla(274, 100%, 50%, 1), hsla(274, 100%, 50%, 0.15));
+  background: linear-gradient(
+    135deg,
+    hsla(274, 100%, 50%, 1),
+    hsla(274, 100%, 50%, 0.15)
+  );
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -114,7 +119,8 @@
   margin-top: auto;
   align-self: center;
   border: 2px solid transparent;
-  background-image: linear-gradient(var(--cta-bg), var(--cta-bg)), var(--button-border-gradient);
+  background-image: linear-gradient(var(--cta-bg), var(--cta-bg)),
+    var(--button-border-gradient);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }

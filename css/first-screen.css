@@ -3,7 +3,7 @@
 .pagecrm_main {
   text-align: center;
   padding: 50px 100px;
-  background: var(--bg-color);
+  background: none;
   color: var(--text-color);
   position: relative;
   overflow: hidden;
