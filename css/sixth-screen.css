@@ -52,6 +52,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  backdrop-filter: blur(20px);
 }
 
 .pagecrm_pricing-card:hover {
@@ -211,7 +212,7 @@
 }
 
 .pagecrm_modal-content form button:hover {
-
+  box-shadow: var(--box-shadow);
 }
 
 .pagecrm_modal-content form p {

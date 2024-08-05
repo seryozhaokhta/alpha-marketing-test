@@ -14,20 +14,25 @@
 
 .pagecrm_second-screen h2 {
   font-size: 45px;
-  margin-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 46px;
 }
 
 .pagecrm_features {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .pagecrm_feature {
   flex: 1 1 200px;
   margin: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagecrm_feature-icon {
@@ -46,6 +51,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .pagecrm_crm-card {
@@ -80,14 +87,7 @@
   padding: 0;
 }
 
-/* .pagecrm_crm-functions li {
-} */
-
 @media (max-width: 768px) {
-  /* .pagecrm_second-screen {
-
-  } */
-
   .pagecrm_second-screen h2 {
     font-size: 24px;
     margin: 0 auto;
@@ -101,8 +101,11 @@
 
   .pagecrm_feature {
     flex: none;
-    width: 100%;
     max-width: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .pagecrm_feature-icon {

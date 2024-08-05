@@ -16,14 +16,14 @@
 .pagecrm_form2-screen h1 {
   font-size: 45px;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .pagecrm_form2-screen h2 {
   font-size: 36px;
   font-weight: normal;
   max-width: 876px;
-  margin: 0 auto 75px;
+  margin: 0 auto 48px;
   background: var(--heading-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

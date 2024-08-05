@@ -10,6 +10,7 @@
 
 .pagecrm_application-form {
   position: relative;
+  margin-top: 60px;
   background: hsla(272, 90%, 23%, 0.49);
   box-shadow: var(--form-shadow);
   padding: 44px 80px 44px 80px;

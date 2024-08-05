@@ -6,6 +6,7 @@
   background: none;
   color: var(--text-color);
   position: relative;
+  margin-top: 60px;
 }
 
 .pagecrm_container {
