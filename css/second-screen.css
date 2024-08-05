@@ -34,8 +34,7 @@
   width: 140px;
   height: 140px;
   margin-bottom: 10px;
-  filter: drop-shadow(0 0 10px var(--glow-color))
-    drop-shadow(0 0 20px var(--glow-color));
+  filter: drop-shadow(0 0 10px var(--glow-color)) drop-shadow(0 0 20px var(--glow-color));
 }
 
 .pagecrm_feature p {
@@ -86,14 +85,12 @@
 
 @media (max-width: 768px) {
   .pagecrm_second-screen {
-    padding: 30px 10px;
-    max-width: calc(100% -60px);
+
   }
 
   .pagecrm_second-screen h2 {
     font-size: 24px;
     margin: 0 auto;
-    max-width: 70%;
   }
 
   .pagecrm_features {
@@ -123,10 +120,9 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .pagecrm_crm-card {
     background: none;
-
     border-radius: 20px;
     overflow: hidden;
     height: 250px;

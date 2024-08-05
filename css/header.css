@@ -64,7 +64,7 @@
 
 .pagecrm_header nav {
   display: flex;
-  gap: 20px;
+  gap: 36px;
 }
 
 .pagecrm_header nav a {
@@ -81,7 +81,7 @@
 .pagecrm_header .contact-info {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 34px;
 }
 
 .pagecrm_header .contact-info .icon {
