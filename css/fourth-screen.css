@@ -29,19 +29,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 1167px; /* Задаем ширину блока */
-  height: 504px; /* Задаем высоту блока */
+  width: 1167px;
+  height: auto;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   padding: 50px 60px;
-  z-index: 1; /* Устанавливаем z-index для перекрытия */
+  z-index: 1;
 }
 
 .pagecrm_benefit {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 18px;
+  margin-bottom: -20px;
 }
 
 .pagecrm_benefit-icon {
@@ -53,6 +53,7 @@
   font-size: 36px;
   text-align: left;
   color: var(--text-color);
+  line-height: 2.1;
 }
 
 .pagecrm_crm-analytics-wrapper {
