@@ -7,7 +7,7 @@
   --background-position: top center;
   --font-family: "Play", sans-serif;
   --link-glow: drop-shadow(0 0 10px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
-  --bg-color: hsl(270, 100%, 34%);
+  --bg-header: hsla(270, 100%, 34%, 30%);
   --text-color: white;
   --header-bg: hsla(265, 97%, 13%, 0.3);
   --nav-link-hover: hsl(0, 0%, 100%);

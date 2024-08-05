@@ -3,7 +3,7 @@
 .pagecrm_header,
 .pagecrm_footer {
   padding: 10px;
-  background: var(--bg-color);
+  background: var(--bg-header);
   color: var(--text-color);
 }
 
