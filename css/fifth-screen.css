@@ -97,21 +97,27 @@
   margin: 5px 0;
 }
 
-.pagecrm_cta-button {
+.pagecrm_cta-button-2 {
   display: inline-block;
-  margin-top: 10px;
-  padding: 11px 34px;
-  font-size: 20px;
-  font-weight: bold;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 24px;
   color: var(--text-color);
-  background-color: var(--cta-bg);
-  border: none;
+  background: var(--cta-bg-semi-transparent); /* Полупрозрачный фон */
+  border: 2px solid transparent;
   border-radius: 20px;
   text-decoration: none;
+  z-index: 2;
+  position: relative;
+  background-image: linear-gradient(var(--cta-bg-semi-transparent), var(--cta-bg-semi-transparent)), var(--cta-border-gradient); /* Градиентная обводка */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
-.pagecrm_cta-button:hover {
+.pagecrm_cta-button-2:hover {
   background-color: var(--cta-hover-bg);
+  box-shadow: var(--box-shadow);
 }
 
 .gradient-text {

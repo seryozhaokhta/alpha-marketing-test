@@ -34,4 +34,5 @@
   --globe-glow: drop-shadow(0 0 20px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.8));
    --cta-bg-new: #B195FF; 
   --cta-border-gradient: linear-gradient(135deg, #59f8d2 9%, #74dfdd 31%, #a1b4ef 67%, #cabeff 100%);
+  --cta-bg-semi-transparent: rgba(29, 1, 65);
 }
