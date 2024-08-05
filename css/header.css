@@ -104,7 +104,8 @@
   padding: 10px 20px;
   border-radius: 10px;
   border: 2px solid transparent;
-  background-image: linear-gradient(var(--cta-bg), var(--cta-bg)), var(--button-border-gradient);
+  background-image: linear-gradient(var(--cta-bg), var(--cta-bg)),
+    var(--button-border-gradient);
   background-origin: border-box;
   background-clip: padding-box, border-box;
   transition: border-color 0.3s, box-shadow 0.3s;
@@ -162,16 +163,14 @@
   padding: 10px;
   background-color: var(--search-bar-bg);
   border: 1px solid var(--search-bar-border);
-  border-radius: 20px;
+  border-radius: 420px;
+  flex-grow: 1;
+  margin-left: 10px;
 }
 
 .pagecrm_search-bar input {
-  border: none;
-  background: none;
-  color: var(--text-color);
-  font-size: 16px;
-  outline: none;
-  margin-right: 10px;
+  display: none;
+  border-radius: 420px;
 }
 
 .pagecrm_search-bar button {
@@ -184,6 +183,7 @@
 .pagecrm_search-bar img {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
 .pagecrm_burger-menu {
@@ -206,7 +206,11 @@
 
 @media (max-width: 768px) {
   .pagecrm_header {
-    padding: 10px 20px;
+    padding: 20px 16px;
+  }
+
+  .pagecrm_contact-info-mobile .icon {
+    display: none;
   }
 
   .pagecrm_header .logo img {
@@ -214,7 +218,7 @@
   }
 
   .pagecrm_header .logo span {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   .pagecrm_header .logo small {
@@ -223,6 +227,7 @@
 
   .pagecrm_contact-info-mobile {
     display: flex;
+    font-size: 11px;
   }
 
   .pagecrm_header nav {
@@ -273,9 +278,20 @@
 
   .pagecrm_search-bar {
     display: flex;
+    flex-grow: 1;
+    margin-left: 17px;
+    margin-right: 16px;
+    width: 10px;
+    border-radius: 420px;
   }
 
   .search-bar-desktop {
     display: none;
+  }
+
+  .pagecrm_header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 }

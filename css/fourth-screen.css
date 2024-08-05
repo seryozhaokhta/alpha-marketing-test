@@ -8,8 +8,9 @@
 }
 
 .pagecrm_container {
-  max-width: 1400px;
+  max-width: 2000px;
   margin: 0 auto;
+  position: relative; /* Добавляем относительное позиционирование */
 }
 
 .pagecrm_fourth-screen h2 {
@@ -21,16 +22,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative; /* Добавляем относительное позиционирование */
 }
 
 .pagecrm_crm-benefits {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 60%;
+  width: 1167px; /* Задаем ширину блока */
+  height: 504px; /* Задаем высоту блока */
   background: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  padding: 20px;
+  padding: 50px 60px;
+  z-index: 1; /* Устанавливаем z-index для перекрытия */
 }
 
 .pagecrm_benefit {
@@ -47,13 +51,21 @@
 
 .pagecrm_crm-benefits p {
   font-size: 36px;
+  text-align: left;
   color: var(--text-color);
+}
+
+.pagecrm_crm-analytics-wrapper {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2; /* Устанавливаем больший z-index для наложения */
 }
 
 .pagecrm_crm-analytics {
   display: flex;
-  justify-content: flex-end;
-  width: 40%;
+  align-items: center; /* Выровнять по вертикали */
 }
 
 .pagecrm_analytics-image {
@@ -85,7 +97,9 @@
   }
 
   .pagecrm_crm-benefits {
-    width: 100%;
+    width: 340px;
+    height: 266px;
+    padding: 20px 20px;
     margin-right: 0;
   }
 
